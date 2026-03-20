@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@import "@fontsource-variable/inter";
+@import "@fontsource/geist/500.css";
+@import "@fontsource/geist/700.css";
+@import "@fontsource/fragment-mono/400.css";
+
+@font-face {
+	font-family: 'Satoshi';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url('/fonts/satoshi/Satoshi-Regular.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'Satoshi';
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+	src: url('/fonts/satoshi/Satoshi-Medium.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'Satoshi';
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url('/fonts/satoshi/Satoshi-Bold.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'Satoshi';
+	font-style: normal;
+	font-weight: 900;
+	font-display: swap;
+	src: url('/fonts/satoshi/Satoshi-Black.woff2') format('woff2');
+}
+
+@theme {
+	--color-brand-purple: #5f09de;
+	--color-brand-gold: #fcc00a;
+	--color-brand-black: #000000;
+	--color-brand-white: #ffffff;
+	--color-brand-gray-light: #f6f7f9;
+	--color-brand-gray-dark: #3b3b3b;
+	--color-brand-blue: #0099ff;
+
+	--color-accent-purple: #cdc4ff;
+	--color-accent-pink: #eeddea;
+	--color-accent-teal: #d4ede9;
+	--color-accent-yellow: #feecba;
+	--color-accent-blue: #c9defd;
+	--color-accent-green: #dcedb4;
+
+	--font-sans: 'Inter Variable', 'Inter', ui-sans-serif, system-ui, sans-serif;
+	--font-heading: 'Satoshi', 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
+	--font-accent: 'Geist', ui-sans-serif, system-ui, sans-serif;
+	--font-mono: 'Fragment Mono', ui-monospace, monospace;
+}
