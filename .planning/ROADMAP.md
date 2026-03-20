@@ -31,7 +31,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans**: 3 plans
 
 Plans:
-- [ ] 01-01-PLAN.md -- Scaffold SvelteKit project and run Playwright scraper to capture Framer site
+- [x] 01-01-PLAN.md -- Scaffold SvelteKit project and run Playwright scraper to capture Framer site
 - [ ] 01-02-PLAN.md -- Global layout with sticky header, responsive navigation, and footer
 - [ ] 01-03-PLAN.md -- Homepage with all sections matching honeylink.nl
 
