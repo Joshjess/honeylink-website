@@ -1,7 +1,7 @@
 # Requirements: HoneyLink Website
 
 **Defined:** 2026-03-20
-**Core Value:** Faithfully present HoneyLink's services and case studies with fast load times, strong SEO, and professional appearance — replacing Framer without losing content, URLs, or search rankings.
+**Core Value:** Faithfully present HoneyLink's services and case studies with fast load times, strong SEO, and professional appearance -- replacing Framer without losing content, URLs, or search rankings.
 
 ## v1 Requirements
 
@@ -58,7 +58,7 @@ Requirements for initial release. Each maps to roadmap phases.
 - [ ] **SEO-03**: Open Graph and Twitter card meta tags on every page
 - [ ] **SEO-04**: Auto-generated sitemap.xml with all routes
 - [ ] **SEO-05**: Canonical URLs on all pages
-- [ ] **SEO-06**: Structured data (JSON-LD) — Organization on homepage, Article on blogs, Service on service pages
+- [ ] **SEO-06**: Structured data (JSON-LD) -- Organization on homepage, Article on blogs, Service on service pages
 - [ ] **SEO-07**: robots.txt configured correctly
 - [ ] **SEO-08**: Image optimization with AVIF/WebP automatic conversion
 
@@ -67,14 +67,14 @@ Requirements for initial release. Each maps to roadmap phases.
 - [ ] **SECR-01**: CSP headers configured in hooks.server.ts
 - [ ] **SECR-02**: HTTPS enforced via Caddy with automatic Let's Encrypt certificates
 - [ ] **SECR-03**: Input sanitization on contact form
-- [ ] **SECR-04**: Environment variables for secrets (Resend API key) — never in client bundle
+- [ ] **SECR-04**: Environment variables for secrets (Resend API key) -- never in client bundle
 
 ### Deployment
 
 - [ ] **DEPL-01**: Hetzner VPS provisioned and configured
 - [ ] **DEPL-02**: Caddy reverse proxy with automatic HTTPS
 - [ ] **DEPL-03**: PM2 process management for Node.js
-- [ ] **DEPL-04**: Build and deployment pipeline (git push → build → restart)
+- [ ] **DEPL-04**: Build and deployment pipeline (git push -> build -> restart)
 - [ ] **DEPL-05**: DNS migration from Framer to Hetzner VPS
 
 ## v2 Requirements
@@ -103,16 +103,16 @@ Deferred to future release. Tracked but not in current roadmap.
 
 | Feature | Reason |
 |---------|--------|
-| Admin dashboard / CMS UI | One person edits content — Markdown files in repo are sufficient |
-| User authentication | No user accounts needed — pure public site |
+| Admin dashboard / CMS UI | One person edits content -- Markdown files in repo are sufficient |
+| User authentication | No user accounts needed -- pure public site |
 | Real-time features (WebSocket) | Zero use case for a static content site |
-| Database | No dynamic data — contact form sends email, content is Markdown |
-| Multi-language (i18n) | Dutch only for now — clean structure allows adding later |
+| Database | No dynamic data -- contact form sends email, content is Markdown |
+| Multi-language (i18n) | Dutch only for now -- clean structure allows adding later |
 | Comment system on blogs | Rarely used on agency blogs, attracts spam, moderation overhead |
 | Search functionality | 15 blog posts don't warrant a search feature |
 | Quote calculator / pricing | Contact form is the sole entry point for leads |
 | Video hosting | Storage/bandwidth costs, use embedded YouTube/Vimeo if needed |
-| AI chatbot on site | Scope creep — contact form is the lead channel |
+| AI chatbot on site | Scope creep -- contact form is the lead channel |
 
 ## Traceability
 
@@ -120,58 +120,58 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| FOUN-01 | — | Pending |
-| FOUN-02 | — | Pending |
-| FOUN-03 | — | Pending |
-| FOUN-04 | — | Pending |
-| CONT-01 | — | Pending |
-| CONT-02 | — | Pending |
-| CONT-03 | — | Pending |
-| CONT-04 | — | Pending |
-| CONT-05 | — | Pending |
-| CONT-06 | — | Pending |
-| CONT-07 | — | Pending |
-| CONT-08 | — | Pending |
-| CONT-09 | — | Pending |
-| SERV-01 | — | Pending |
-| SERV-02 | — | Pending |
-| SERV-03 | — | Pending |
-| SERV-04 | — | Pending |
-| SERV-05 | — | Pending |
-| SERV-06 | — | Pending |
-| SERV-07 | — | Pending |
-| STAT-01 | — | Pending |
-| STAT-02 | — | Pending |
-| STAT-03 | — | Pending |
-| STAT-04 | — | Pending |
-| CNTC-01 | — | Pending |
-| CNTC-02 | — | Pending |
-| CNTC-03 | — | Pending |
-| CNTC-04 | — | Pending |
-| CNTC-05 | — | Pending |
-| SEO-01 | — | Pending |
-| SEO-02 | — | Pending |
-| SEO-03 | — | Pending |
-| SEO-04 | — | Pending |
-| SEO-05 | — | Pending |
-| SEO-06 | — | Pending |
-| SEO-07 | — | Pending |
-| SEO-08 | — | Pending |
-| SECR-01 | — | Pending |
-| SECR-02 | — | Pending |
-| SECR-03 | — | Pending |
-| SECR-04 | — | Pending |
-| DEPL-01 | — | Pending |
-| DEPL-02 | — | Pending |
-| DEPL-03 | — | Pending |
-| DEPL-04 | — | Pending |
-| DEPL-05 | — | Pending |
+| FOUN-01 | Phase 1 | Pending |
+| FOUN-02 | Phase 1 | Pending |
+| FOUN-03 | Phase 1 | Pending |
+| FOUN-04 | Phase 1 | Pending |
+| CONT-01 | Phase 2 | Pending |
+| CONT-02 | Phase 2 | Pending |
+| CONT-03 | Phase 2 | Pending |
+| CONT-04 | Phase 2 | Pending |
+| CONT-05 | Phase 2 | Pending |
+| CONT-06 | Phase 2 | Pending |
+| CONT-07 | Phase 2 | Pending |
+| CONT-08 | Phase 2 | Pending |
+| CONT-09 | Phase 2 | Pending |
+| SERV-01 | Phase 2 | Pending |
+| SERV-02 | Phase 2 | Pending |
+| SERV-03 | Phase 2 | Pending |
+| SERV-04 | Phase 2 | Pending |
+| SERV-05 | Phase 2 | Pending |
+| SERV-06 | Phase 2 | Pending |
+| SERV-07 | Phase 2 | Pending |
+| STAT-01 | Phase 2 | Pending |
+| STAT-02 | Phase 2 | Pending |
+| STAT-03 | Phase 2 | Pending |
+| STAT-04 | Phase 2 | Pending |
+| CNTC-01 | Phase 3 | Pending |
+| CNTC-02 | Phase 3 | Pending |
+| CNTC-03 | Phase 3 | Pending |
+| CNTC-04 | Phase 3 | Pending |
+| CNTC-05 | Phase 3 | Pending |
+| SEO-01 | Phase 3 | Pending |
+| SEO-02 | Phase 3 | Pending |
+| SEO-03 | Phase 3 | Pending |
+| SEO-04 | Phase 3 | Pending |
+| SEO-05 | Phase 3 | Pending |
+| SEO-06 | Phase 3 | Pending |
+| SEO-07 | Phase 3 | Pending |
+| SEO-08 | Phase 3 | Pending |
+| SECR-01 | Phase 3 | Pending |
+| SECR-02 | Phase 3 | Pending |
+| SECR-03 | Phase 3 | Pending |
+| SECR-04 | Phase 3 | Pending |
+| DEPL-01 | Phase 4 | Pending |
+| DEPL-02 | Phase 4 | Pending |
+| DEPL-03 | Phase 4 | Pending |
+| DEPL-04 | Phase 4 | Pending |
+| DEPL-05 | Phase 4 | Pending |
 
 **Coverage:**
-- v1 requirements: 45 total
-- Mapped to phases: 0
-- Unmapped: 45
+- v1 requirements: 46 total
+- Mapped to phases: 46
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-03-20*
-*Last updated: 2026-03-20 after initial definition*
+*Last updated: 2026-03-20 after roadmap creation*
