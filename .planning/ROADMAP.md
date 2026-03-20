@@ -28,11 +28,12 @@ Decimal phases appear between their surrounding integers in numeric order.
   2. Every page displays a header with navigation and footer matching the current honeylink.nl structure
   3. The homepage at / renders content matching the current Framer homepage design
   4. The layout adapts correctly between mobile, tablet, and desktop screen widths
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 01-01: TBD
-- [ ] 01-02: TBD
+- [ ] 01-01-PLAN.md -- Scaffold SvelteKit project and run Playwright scraper to capture Framer site
+- [ ] 01-02-PLAN.md -- Global layout with sticky header, responsive navigation, and footer
+- [ ] 01-03-PLAN.md -- Homepage with all sections matching honeylink.nl
 
 ### Phase 2: Content and Pages
 **Goal**: Every content page on honeylink.nl exists in the SvelteKit site -- all 15 blog posts, 5 case studies, 7 service pages, about page, and 3 legal pages are browsable
@@ -90,7 +91,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 0/2 | Not started | - |
+| 1. Foundation | 0/3 | Planning complete | - |
 | 2. Content and Pages | 0/3 | Not started | - |
 | 3. Functionality and SEO | 0/3 | Not started | - |
 | 4. Deployment | 0/2 | Not started | - |
