@@ -28,13 +28,13 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Services
 
-- [ ] **SERV-01**: /automation service page migrated from Framer
-- [ ] **SERV-02**: /data-verrijking service page migrated from Framer
-- [ ] **SERV-03**: /api service page migrated from Framer
-- [ ] **SERV-04**: /maatwerk-software service page migrated from Framer
-- [ ] **SERV-05**: /offerte-automatisering service page migrated from Framer
-- [ ] **SERV-06**: /ai-agent service page migrated from Framer
-- [ ] **SERV-07**: /chatbot service page migrated from Framer
+- [x] **SERV-01**: /automation service page migrated from Framer
+- [x] **SERV-02**: /data-verrijking service page migrated from Framer
+- [x] **SERV-03**: /api service page migrated from Framer
+- [x] **SERV-04**: /maatwerk-software service page migrated from Framer
+- [x] **SERV-05**: /offerte-automatisering service page migrated from Framer
+- [x] **SERV-06**: /ai-agent service page migrated from Framer
+- [x] **SERV-07**: /chatbot service page migrated from Framer
 
 ### Static Pages
 
@@ -133,13 +133,13 @@ Which phases cover which requirements. Updated during roadmap creation.
 | CONT-07 | Phase 2 | Complete |
 | CONT-08 | Phase 2 | Complete |
 | CONT-09 | Phase 2 | Complete |
-| SERV-01 | Phase 2 | Pending |
-| SERV-02 | Phase 2 | Pending |
-| SERV-03 | Phase 2 | Pending |
-| SERV-04 | Phase 2 | Pending |
-| SERV-05 | Phase 2 | Pending |
-| SERV-06 | Phase 2 | Pending |
-| SERV-07 | Phase 2 | Pending |
+| SERV-01 | Phase 2 | Complete |
+| SERV-02 | Phase 2 | Complete |
+| SERV-03 | Phase 2 | Complete |
+| SERV-04 | Phase 2 | Complete |
+| SERV-05 | Phase 2 | Complete |
+| SERV-06 | Phase 2 | Complete |
+| SERV-07 | Phase 2 | Complete |
 | STAT-01 | Phase 2 | Complete |
 | STAT-02 | Phase 2 | Complete |
 | STAT-03 | Phase 2 | Complete |
