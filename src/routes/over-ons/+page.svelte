@@ -30,6 +30,14 @@
 				/>
 			</div>
 			<div class="mt-8 lg:mt-0">
+				<p class="text-sm font-heading font-bold uppercase tracking-wider text-brand-gray-dark mb-3">
+					Missie:
+				</p>
+				<div class="bg-brand-gold rounded-xl p-5 mb-8">
+					<p class="font-heading font-bold text-brand-black leading-snug">
+						{missionSubtext}
+					</p>
+				</div>
 				<h2
 					class="font-heading text-3xl md:text-4xl font-bold text-brand-black mb-6"
 				>
@@ -40,9 +48,6 @@
 						{paragraph}
 					</p>
 				{/each}
-				<p class="text-brand-purple font-heading font-bold mt-6 border-l-4 border-brand-gold pl-4">
-					{missionSubtext}
-				</p>
 			</div>
 		</div>
 	</div>
