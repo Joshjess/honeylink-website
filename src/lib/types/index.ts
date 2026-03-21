@@ -9,3 +9,53 @@ export interface SiteConfig {
 	url: string;
 	description: string;
 }
+
+export interface BlogPost {
+	title: string;
+	slug: string;
+	date: string;
+	author: string;
+	authorImage: string;
+	excerpt: string;
+	image: string;
+	published: boolean;
+	readingTime?: number;
+}
+
+export interface CaseStudy {
+	title: string;
+	slug: string;
+	client: string;
+	industry: string;
+	author: string;
+	authorImage: string;
+	excerpt: string;
+	image: string;
+	published: boolean;
+}
+
+export interface FaqItemData {
+	question: string;
+	answer: string;
+}
+
+export interface ServicePageData {
+	title: string;
+	subtitle: string;
+	sections: ServiceSection[];
+	faq: FaqItemData[];
+}
+
+export interface ServiceSection {
+	heading: string;
+	body: string;
+	type: 'value-proposition' | 'features' | 'examples';
+	items?: ServiceFeature[];
+	image?: string;
+}
+
+export interface ServiceFeature {
+	title: string;
+	description: string;
+	accentColor?: string;
+}
