@@ -50,14 +50,14 @@ Exceptions:
 
 ## Typography
 
-All values match Phase 1 established patterns. Four type roles defined.
+All values match Phase 1 established patterns. Four type roles defined across two font weights: 400 (regular) and 700 (bold).
 
 | Role | Size | Weight | Line Height | Font | Tailwind Classes |
 |------|------|--------|-------------|------|-----------------|
 | Display | 36/48/72px | 700 (bold) | 1.1 | Satoshi | `font-heading text-4xl md:text-5xl lg:text-7xl font-bold leading-tight` |
 | Heading | 20/24/30/48px | 700 (bold) | 1.2 -- 1.3 | Satoshi | h2: `font-heading text-3xl md:text-4xl lg:text-5xl font-bold`; h3: `font-heading text-xl md:text-2xl font-bold` |
 | Body | 16/18px | 400 (regular) | 1.5 -- 1.625 | Inter Variable | Prose: `text-lg text-brand-gray-dark leading-relaxed`; Compact: `text-base text-brand-gray-dark`; Code inherits Body 16px via `font-mono text-base` (Fragment Mono) |
-| Label | 14px | 500 (medium) | 1.4 | Inter Variable | `text-sm font-medium text-brand-gray-dark` |
+| Label | 14px | 400 (regular) | 1.4 | Inter Variable | `text-sm font-normal text-brand-gray-dark` |
 
 Display is used for page h1 elements only. Heading covers both h2 and h3 levels through responsive size variants within a single role. Body covers prose paragraphs (text-lg, 18px) and compact UI text (text-base, 16px) as size variants within a single role; inline code and code blocks inherit the Body 16px tier using Fragment Mono. Label covers metadata, tags, dates, and reading time.
 
@@ -120,7 +120,7 @@ The gold accent (`#fcc00a`) is reserved exclusively for:
 ### Blog Post Page (`/blogs/[slug]`)
 
 Layout from top to bottom:
-1. **Date** -- `text-sm font-medium text-brand-purple` centered above the title
+1. **Date** -- `text-sm font-normal text-brand-purple` centered above the title
 2. **Title (h1)** -- Display size, centered, max-w-4xl
 3. **Hero image** -- full-width within max-w-3xl, rounded-xl, bg-brand-gold for image container
 4. **Author row** -- avatar (40px circle) + "Door: [Name]" left-aligned, below hero image, mb-8
