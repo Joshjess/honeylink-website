@@ -34,14 +34,14 @@ Declared values (must be multiples of 4):
 | Token | Value | Usage |
 |-------|-------|-------|
 | xs | 4px | Icon gaps, inline padding |
-| sm | 8px | Field-level error message margin, compact element spacing |
-| md | 16px | Form field vertical gap, input padding |
+| sm | 8px | Field-level error message margin, label-to-input gap, compact element spacing |
+| md | 16px | Form field vertical gap, input horizontal padding |
 | lg | 24px | Section padding, form-to-info column gap on mobile |
 | xl | 32px | Contact details block spacing |
 | 2xl | 48px | Major section breaks (form area to FAQ section) |
 | 3xl | 64px | Page-level vertical padding (py-16 md:py-24 pattern) |
 
-Exceptions: Form inputs use 12px horizontal padding (px-3) and 10px vertical padding (py-2.5) for comfortable touch targets at 44px minimum height. This is consistent with the existing Button component padding pattern.
+Exceptions: Form inputs use 12px horizontal padding (px-3) and 12px vertical padding (py-3) with `min-h-[44px]` to guarantee 44px minimum touch target height. All spacing values in the form field pattern are multiples of 4 (8px label margin, 8px error margin, 12px input padding, 16px field gap).
 
 Source: Established patterns from Phase 1-2 components (py-16 md:py-24 section padding, p-8 card padding, mb-6 heading margins).
 
@@ -49,18 +49,22 @@ Source: Established patterns from Phase 1-2 components (py-16 md:py-24 section p
 
 ## Typography
 
+Phase 3 operative type contract (3 sizes, 2 weights). The full site type scale (display sizes 30px-72px, weight 700) is inherited from Phase 1 via `src/app.css` and is not modified in this phase.
+
 | Role | Size | Weight | Line Height | Font Family |
 |------|------|--------|-------------|-------------|
 | Body | 16px (text-base) | 400 (regular) | 1.5 (leading-relaxed) | Inter Variable |
 | Label | 14px (text-sm) | 500 (medium) | 1.4 | Geist |
-| Heading | 30px / 36px / 48px (text-3xl / text-4xl / text-5xl) | 700 (bold) | 1.2 (leading-tight) | Satoshi |
-| Display | 36px / 48px / 72px (text-4xl / text-5xl / text-7xl) | 700 (bold) | 1.1 (leading-tight) | Satoshi |
+| Form heading | 24px (text-2xl) | 500 (medium) | 1.2 (leading-tight) | Satoshi |
 
-**Phase 3 additions:**
+**Phase 3 usage of these sizes:**
 - Form field labels: 14px Geist weight 500 (font-accent font-medium text-sm)
 - Form field placeholder text: 16px Inter weight 400, color brand-gray-dark
 - Validation error text: 14px Inter weight 400 (text-sm text-red-600)
 - Success banner text: 16px Inter weight 500 (text-base font-medium)
+- Form card heading ("Stuur ons een bericht"): 24px Satoshi weight 500 (font-heading font-medium text-2xl)
+
+**Note:** Page-level headings (h1 "Meer weten? Plan een adviesgesprek.") use the Phase 1 display scale (text-4xl md:text-5xl lg:text-7xl font-bold Satoshi). That scale is not part of this phase's operative contract -- it is inherited and unchanged.
 
 Source: Existing patterns from PageHero (text-4xl md:text-5xl lg:text-7xl font-bold), body paragraphs (text-lg text-brand-gray-dark), Button labels (font-accent font-medium).
 
@@ -214,11 +218,11 @@ Each form field follows this structure:
 
 ```html
 <div class="mb-4">                                   <!-- 16px bottom margin -->
-  <label class="block text-sm font-accent font-medium text-brand-black mb-1.5">
-    Label text
+  <label class="block text-sm font-accent font-medium text-brand-black mb-2">
+    Label text                                       <!-- 8px bottom margin -->
   </label>
   <input class="
-    w-full px-3 py-2.5                               <!-- full width, comfortable padding -->
+    w-full px-3 py-3 min-h-[44px]                   <!-- full width, 12px padding, 44px touch target -->
     bg-brand-gray-light                              <!-- light gray background -->
     border border-gray-300                           <!-- subtle border -->
     rounded-lg                                       <!-- consistent with Button rounding -->
@@ -229,7 +233,7 @@ Each form field follows this structure:
     transition-colors duration-200                   <!-- smooth state transitions -->
   " />
   <!-- Error message (conditional) -->
-  <p class="mt-1.5 text-sm text-red-600">Error text</p>
+  <p class="mt-2 text-sm text-red-600">Error text</p>  <!-- 8px top margin -->
 </div>
 ```
 
@@ -314,7 +318,7 @@ Submit button during form submission:
 | Submit button | `<button type="submit">` with disabled state reflected in `aria-disabled` |
 | Focus management | After successful submission, focus moves to the success banner heading |
 | Color contrast | All text meets WCAG AA: brand-black (#000) on white = 21:1, brand-gray-dark (#3b3b3b) on white = 10.7:1, red-600 (#dc2626) on white = 4.6:1 |
-| Touch targets | All interactive elements minimum 44px height (inputs: py-2.5 + text = ~44px, button: py-4 in lg size) |
+| Touch targets | All interactive elements minimum 44px height (inputs: py-3 + text + min-h-[44px], button: py-4 in lg size) |
 
 ---
 
