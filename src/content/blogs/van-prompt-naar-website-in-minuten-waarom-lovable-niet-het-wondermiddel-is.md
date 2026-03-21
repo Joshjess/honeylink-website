@@ -1,0 +1,12 @@
+---
+title: "Van prompt naar website in minuten: waarom Lovable niet het wondermiddel is"
+slug: "van-prompt-naar-website-in-minuten-waarom-lovable-niet-het-wondermiddel-is"
+date: "2025-08-15"
+author: "Joshua Offermans"
+authorImage: "/images/team/joshua-offermans.jpeg"
+excerpt: "De Zweedse AI start-up, Lovable, heeft met een recente grote funding ronde maar liefst 200 miljoen dollar opgehaald. Met hun AI tool kan iedereen..."
+image: "/images/blogs/van-prompt-naar-website-in-minuten-waarom-lovable-niet-het-wondermiddel-is/hero.jpeg"
+published: true
+---
+
+De Zweedse AI start-up, Lovable, heeft met een recente grote funding ronde maar liefst 200 miljoen dollar opgehaald. Met hun AI tool kan iedereen gemakkelijk websites bouwen, gewoon door te prompten. Een degelijke website is in een paar minuten binnen handbereik en hier hoef je dus geen software ontwikkelaar voor te zijn. Een mooie ontwikkeling als je het mij vraagt, maar na zelf de proef op de som te hebben genomen ben ik niet louter positief. Want voor maatwerk met unieke functies of complexere applicaties schiet het wat mij betreft tekort. Zo bestaat de kans dat je niet krijgt wat je wilde, maar je alsnog veel tijd en geld kwijt bent. Enthousiaste ondernemers die denken dat ze even snel een website of applicatie kunnen bouwen voor hun onderneming, komen van een koude kermis thuis. Aan de andere kant biedt de tool wel een mooie kans om op deze manier je onderneming in korte tijd een gezicht te geven en een eigen plek op het wereldwijde web. Het is absoluut een quick fix.Toch is het gebruik van Lovable ook niet bepaald vrij van veiligheidsrisico’s, want als je zoiets gaat bouwen met beperkte technische kennis dan zie je snel belangrijke beveiligingseisen over het hoofd. Hierdoor loop je een verhoogd risico op datalekken in je website waardoor belangrijke en/of gevoelige informatie over je gebruikers zo op straat kan komen te liggen. Het internet staat ondertussen al vol met voorbeelden zoek maar even op ‘Lovable vulnerability'.Kortom, de tool kan een goede basis leveren, maar brengt ook risico’s met zich mee. Dat het nu voor iedere fantast mogelijk is om een prima website te maken is een veelbelovende ontwikkeling en met 200 miljoen dollar kunnen ze zich vast veel verder doorontwikkelen. Ik ben erg benieuwd waar de lat over een paar jaar ligt. Maar voor nu: weet wat je wel en niet moet verwachten van je lovable abonnementje van 20 dollar per maand.

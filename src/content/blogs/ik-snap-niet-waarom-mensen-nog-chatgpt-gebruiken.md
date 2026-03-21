@@ -1,0 +1,12 @@
+---
+title: "Ik snap niet waarom mensen nog ChatGPT gebruiken"
+slug: "ik-snap-niet-waarom-mensen-nog-chatgpt-gebruiken"
+date: "2025-07-05"
+author: "Joshua Offermans"
+authorImage: "/images/team/joshua-offermans.jpeg"
+excerpt: "ChatGPT: begonnen als hét Large Language Model (LLM) voor het genereren van teksten, afbeeldingen en het uitvoeren van allerhande taken; is voor mij..."
+image: "/images/blogs/ik-snap-niet-waarom-mensen-nog-chatgpt-gebruiken/hero.jpeg"
+published: true
+---
+
+ChatGPT: begonnen als hét Large Language Model (LLM) voor het genereren van teksten, afbeeldingen en het uitvoeren van allerhande taken; is voor mij voorlopig verleden tijd. Desondanks kan gerust gesteld worden dat moederbedrijf OpenAI, met hun LLM, zo’n beetje deze AI-revolutie in gang heeft gezet. Maar zoals zo vaak zit je als koploper vaak niet in de meest comfortabele zetel, de moeilijkste plaats is de eerste, kijk maar naar de Formule 1. In plaats van ronkende motoren waren het voor OpenAI, de iets stillere, programmerende tech nerds die in hun nek aan het hijgen waren. En voorlopig ziet het er niet zo goed uit. Dan heb ik het natuurlijk niet over dat ik hun diensten niet meer gebruik, dat is slechts een bijzaak. Naar mijn mening worden ze gewoonweg op kwaliteit voorbijgestreefd door LLM’s als Gemini en Claude. Google leek in eerste instantie het ondergeschoven kindje te worden in deze AI-revolutie. De zoekvolumes van - het oude vertrouwde en vooral dominante Google - kelderden en de eerste Gemini modellen waren niet bepaald om over naar huis te schrijven. Maar nu hebben ze, met hun laatste Gemini 2.5 Pro, een van de betere modellen. Ik gebruik ‘m graag. Dan Claude, momenteel absoluut mijn favoriete LLM. Waarom? Sowieso het beste model qua programmeren, maar ook op andere gebieden zoals het schrijven van teksten en het vinden van relevante en betrouwbare informatie doet ‘ie het erg goed. Iets wat het vaak hallucinerende ChatGPT niet kan zeggen. Als je het mij vraagt is ChatGPT simpelweg niet meer de pionier die het was en zie ik geen reden om het nog te gebruiken in een wereld met zoveel goede alternatieven. En natuurlijk, het AI-landschap is enorm veranderlijk, dus wie weet hoe de verhoudingen over een half jaar zijn, maar voor nu zoek ik m’n geluk bij andere LLM’s. Toch zeg ik: trek je vooral niet te veel aan van mijn bescheiden mening en probeer zelf eens andere modellen als Gemini en Claude. Je zal je nog eens verbazen ;) Hoe kijken jullie hiernaar en zijn er nog alternatieve modellen die ik ben vergeten of die je zou aanraden?
