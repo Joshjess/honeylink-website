@@ -65,10 +65,11 @@
 			</div>
 
 			<div class="flex justify-center">
-				<img
-					src="/images/homepage/ai-agent.png"
+				<enhanced:img
+					src="$lib/assets/homepage/ai-agent.png"
 					alt="Smart chatbot solution for seamless interactions."
 					class="w-full max-w-md rounded-2xl"
+					sizes="(min-width: 1024px) 50vw, 100vw"
 				/>
 			</div>
 		</div>

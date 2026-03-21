@@ -27,10 +27,11 @@
 	<!-- Hero workflow illustration -->
 	<div class="relative px-4 pb-12 md:pb-20">
 		<div class="mx-auto max-w-5xl">
-			<img
-				src="/images/homepage/hero-illustration.png"
+			<enhanced:img
+				src="$lib/assets/homepage/hero-illustration.png"
 				alt="Workflow automatisering diagram"
 				class="w-full h-auto"
+				sizes="min(1280px, 100vw)"
 			/>
 		</div>
 	</div>

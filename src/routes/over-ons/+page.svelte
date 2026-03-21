@@ -23,10 +23,11 @@
 	<div class="mx-auto max-w-7xl px-4 py-16 md:py-24">
 		<div class="lg:grid lg:grid-cols-2 lg:gap-12 lg:items-start">
 			<div>
-				<img
-					src="/images/about/team-office.jpg"
+				<enhanced:img
+					src="$lib/assets/about/team-office.jpg"
 					alt="HoneyLink team aan het werk"
 					class="rounded-2xl w-full h-auto"
+					sizes="(min-width: 1024px) 50vw, 100vw"
 				/>
 			</div>
 			<div class="mt-8 lg:mt-0">

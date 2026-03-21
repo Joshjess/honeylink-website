@@ -27,10 +27,11 @@
 
 			<!-- CTA image -->
 			<div class="hidden lg:block">
-				<img
-					src="/images/homepage/cta-bg.jpg"
+				<enhanced:img
+					src="$lib/assets/homepage/cta-bg.jpg"
 					alt="HoneyLink team aan het werk"
 					class="rounded-2xl w-full h-auto object-cover shadow-lg"
+					sizes="100vw"
 				/>
 			</div>
 		</div>
