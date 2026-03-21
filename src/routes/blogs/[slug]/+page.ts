@@ -1,19 +1,21 @@
 import { error } from '@sveltejs/kit';
 import type { PageLoad } from './$types';
-import readingTime from 'reading-time';
+
+function estimateReadingTime(text: string): number {
+	const words = text.trim().split(/\s+/).length;
+	return Math.max(1, Math.round(words / 200));
+}
 
 export const load: PageLoad = async ({ params }) => {
 	try {
 		const post = await import(`../../../content/blogs/${params.slug}.md`);
 		const raw = await import(`../../../content/blogs/${params.slug}.md?raw`);
 
-		const stats = readingTime(raw.default);
-
 		return {
 			content: post.default,
 			meta: {
 				...post.metadata,
-				readingTime: Math.max(1, Math.round(stats.minutes))
+				readingTime: estimateReadingTime(raw.default)
 			}
 		};
 	} catch {
