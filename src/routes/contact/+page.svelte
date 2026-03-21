@@ -4,6 +4,7 @@
 	import FaqAccordion from '$lib/components/ui/FaqAccordion.svelte';
 	import Button from '$lib/components/ui/Button.svelte';
 	import { inview } from '$lib/actions/inview';
+	import { JsonLd } from 'svelte-meta-tags';
 	import { contactFaqItems, contactDetails } from '$lib/data/contact';
 
 	let { data } = $props();
@@ -15,6 +16,14 @@
 		}
 	});
 </script>
+
+<JsonLd schema={{
+	'@type': 'BreadcrumbList',
+	itemListElement: [
+		{ '@type': 'ListItem', position: 1, name: 'Home', item: 'https://honeylink.nl' },
+		{ '@type': 'ListItem', position: 2, name: 'Contact' }
+	]
+}} />
 
 <section class="mx-auto max-w-7xl px-4 py-16 md:py-24">
 	<div class="grid grid-cols-1 lg:grid-cols-2 gap-12">

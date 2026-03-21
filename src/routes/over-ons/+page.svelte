@@ -4,6 +4,7 @@
 	import FaqAccordion from '$lib/components/ui/FaqAccordion.svelte';
 	import CtaSection from '$lib/components/homepage/CtaSection.svelte';
 	import { inview } from '$lib/actions/inview';
+	import { JsonLd } from 'svelte-meta-tags';
 	import {
 		missionHeading,
 		missionParagraphs,
@@ -12,6 +13,14 @@
 		faqItems
 	} from '$lib/data/about';
 </script>
+
+<JsonLd schema={{
+	'@type': 'BreadcrumbList',
+	itemListElement: [
+		{ '@type': 'ListItem', position: 1, name: 'Home', item: 'https://honeylink.nl' },
+		{ '@type': 'ListItem', position: 2, name: 'Over Ons' }
+	]
+}} />
 
 <PageHero title="Over HoneyLink" />
 

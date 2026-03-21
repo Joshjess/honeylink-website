@@ -7,7 +7,27 @@
 	import CtaSection from '$lib/components/homepage/CtaSection.svelte';
 	import Button from '$lib/components/ui/Button.svelte';
 	import { inview } from '$lib/actions/inview';
+	import { JsonLd } from 'svelte-meta-tags';
 </script>
+
+<JsonLd schema={{
+	'@type': 'Service',
+	name: pageData.title,
+	description: pageData.subtitle,
+	provider: {
+		'@type': 'Organization',
+		name: 'HoneyLink',
+		url: 'https://honeylink.nl'
+	}
+}} />
+
+<JsonLd schema={{
+	'@type': 'BreadcrumbList',
+	itemListElement: [
+		{ '@type': 'ListItem', position: 1, name: 'Home', item: 'https://honeylink.nl' },
+		{ '@type': 'ListItem', position: 2, name: pageData.title }
+	]
+}} />
 
 <PageHero title={pageData.title} subtitle={pageData.subtitle} goldBackground={true} />
 

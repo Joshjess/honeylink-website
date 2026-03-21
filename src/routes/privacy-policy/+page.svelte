@@ -1,10 +1,19 @@
 <script lang="ts">
 	import ProseContent from '$lib/components/content/ProseContent.svelte';
+	import { JsonLd } from 'svelte-meta-tags';
 
 	let { data } = $props();
 
 	const ContentComponent = $derived(data.content);
 </script>
+
+<JsonLd schema={{
+	'@type': 'BreadcrumbList',
+	itemListElement: [
+		{ '@type': 'ListItem', position: 1, name: 'Home', item: 'https://honeylink.nl' },
+		{ '@type': 'ListItem', position: 2, name: 'Privacy Policy' }
+	]
+}} />
 
 <div class="bg-white">
 	<!-- Header -->

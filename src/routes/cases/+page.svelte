@@ -3,9 +3,18 @@
 	import CtaSection from '$lib/components/homepage/CtaSection.svelte';
 	import PageHero from '$lib/components/ui/PageHero.svelte';
 	import { inview } from '$lib/actions/inview';
+	import { JsonLd } from 'svelte-meta-tags';
 
 	let { data } = $props();
 </script>
+
+<JsonLd schema={{
+	'@type': 'BreadcrumbList',
+	itemListElement: [
+		{ '@type': 'ListItem', position: 1, name: 'Home', item: 'https://honeylink.nl' },
+		{ '@type': 'ListItem', position: 2, name: 'Cases' }
+	]
+}} />
 
 <PageHero title="Cases" />
 
