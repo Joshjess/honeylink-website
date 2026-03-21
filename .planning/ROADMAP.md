@@ -65,12 +65,13 @@ Plans:
   3. Submitting the form more than 5 times from the same IP within an hour is rejected with a rate-limit message
   4. Every page has correct meta title, description, Open Graph tags, canonical URL, and relevant JSON-LD structured data visible in page source
   5. Visiting /sitemap.xml returns a valid sitemap listing all routes including blog and case slugs
-**Plans**: TBD
+**Plans**: 4 plans
 
 Plans:
-- [ ] 03-01: TBD
-- [ ] 03-02: TBD
-- [ ] 03-03: TBD
+- [ ] 03-01-PLAN.md -- Contact form with Superforms + Zod validation, Resend email delivery, rate limiting, and FAQ section
+- [ ] 03-02-PLAN.md -- SEO meta tags on all pages via svelte-meta-tags, sitemap.xml endpoint, robots.txt, OG default image
+- [ ] 03-03-PLAN.md -- Security headers (CSP) in hooks.server.ts and enhanced-img image optimization
+- [ ] 03-04-PLAN.md -- JSON-LD structured data on all pages and visual verification checkpoint
 
 ### Phase 4: Deployment
 **Goal**: The site is live at honeylink.nl on Hetzner VPS with automatic HTTPS, process management, and a repeatable deploy pipeline
@@ -95,6 +96,6 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation | 3/3 | Complete | - |
-| 2. Content and Pages | 0/6 | Planning complete | - |
-| 3. Functionality and SEO | 0/3 | Not started | - |
+| 2. Content and Pages | 6/6 | Complete | - |
+| 3. Functionality and SEO | 0/4 | Planning complete | - |
 | 4. Deployment | 0/2 | Not started | - |
