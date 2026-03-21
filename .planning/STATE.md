@@ -3,13 +3,13 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: unknown
-stopped_at: Completed 02-04-PLAN.md
-last_updated: "2026-03-21T11:45:00.504Z"
+stopped_at: Completed 03-03-PLAN.md
+last_updated: "2026-03-21T15:42:01.818Z"
 progress:
   total_phases: 4
-  completed_phases: 1
-  total_plans: 9
-  completed_plans: 8
+  completed_phases: 2
+  total_plans: 13
+  completed_plans: 10
 ---
 
 # Project State
@@ -19,12 +19,12 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-20)
 
 **Core value:** Faithfully present HoneyLink's services and case studies with fast load times, strong SEO, and professional appearance -- replacing Framer without losing content, URLs, or search rankings.
-**Current focus:** Phase 02 — content-and-pages
+**Current focus:** Phase 03 — functionality-and-seo
 
 ## Current Position
 
-Phase: 02 (content-and-pages) — EXECUTING
-Plan: 6 of 6
+Phase: 03 (functionality-and-seo) — EXECUTING
+Plan: 2 of 4
 
 ## Performance Metrics
 
@@ -54,6 +54,7 @@ Plan: 6 of 6
 | Phase 02 P03 | 5min | 2 tasks | 4 files |
 | Phase 02 P05 | 8min | 2 tasks | 15 files |
 | Phase 02 P04 | 9min | 2 tasks | 14 files |
+| Phase 03 P03 | 2min | 2 tasks | 13 files |
 
 ## Accumulated Context
 
@@ -85,6 +86,8 @@ Recent decisions affecting current work:
 - [Phase 02]: FAQ answers 2-5 written based on site context (not in scrape -- collapsed accordion)
 - [Phase 02]: FAQ answers for questions 2-5 reconstructed from page context (Framer accordion content not captured in scrape)
 - [Phase 02]: Identical route template for all 7 service pages with data-only import difference
+- [Phase 03]: CSP in hooks.server.ts handle hook (not kit.csp) to avoid duplicate headers
+- [Phase 03]: enhanced:img only for static component images; dynamic/Markdown images stay as standard img
 
 ### Pending Todos
 
@@ -97,6 +100,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-21T11:45:00.501Z
-Stopped at: Completed 02-04-PLAN.md
+Last session: 2026-03-21T15:42:01.814Z
+Stopped at: Completed 03-03-PLAN.md
 Resume file: None

@@ -60,12 +60,12 @@ Requirements for initial release. Each maps to roadmap phases.
 - [ ] **SEO-05**: Canonical URLs on all pages
 - [ ] **SEO-06**: Structured data (JSON-LD) -- Organization on homepage, Article on blogs, Service on service pages
 - [ ] **SEO-07**: robots.txt configured correctly
-- [ ] **SEO-08**: Image optimization with AVIF/WebP automatic conversion
+- [x] **SEO-08**: Image optimization with AVIF/WebP automatic conversion
 
 ### Security
 
-- [ ] **SECR-01**: CSP headers configured in hooks.server.ts
-- [ ] **SECR-02**: HTTPS enforced via Caddy with automatic Let's Encrypt certificates
+- [x] **SECR-01**: CSP headers configured in hooks.server.ts
+- [x] **SECR-02**: HTTPS enforced via Caddy with automatic Let's Encrypt certificates
 - [ ] **SECR-03**: Input sanitization on contact form
 - [ ] **SECR-04**: Environment variables for secrets (Resend API key) -- never in client bundle
 
@@ -156,9 +156,9 @@ Which phases cover which requirements. Updated during roadmap creation.
 | SEO-05 | Phase 3 | Pending |
 | SEO-06 | Phase 3 | Pending |
 | SEO-07 | Phase 3 | Pending |
-| SEO-08 | Phase 3 | Pending |
-| SECR-01 | Phase 3 | Pending |
-| SECR-02 | Phase 3 | Pending |
+| SEO-08 | Phase 3 | Complete |
+| SECR-01 | Phase 3 | Complete |
+| SECR-02 | Phase 3 | Complete |
 | SECR-03 | Phase 3 | Pending |
 | SECR-04 | Phase 3 | Pending |
 | DEPL-01 | Phase 4 | Pending |
