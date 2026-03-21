@@ -33,7 +33,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 Plans:
 - [x] 01-01-PLAN.md -- Scaffold SvelteKit project and run Playwright scraper to capture Framer site
 - [x] 01-02-PLAN.md -- Global layout with sticky header, responsive navigation, and footer
-- [ ] 01-03-PLAN.md -- Homepage with all sections matching honeylink.nl
+- [x] 01-03-PLAN.md -- Homepage with all sections matching honeylink.nl
 
 ### Phase 2: Content and Pages
 **Goal**: Every content page on honeylink.nl exists in the SvelteKit site -- all 15 blog posts, 5 case studies, 7 service pages, about page, and 3 legal pages are browsable

@@ -12,7 +12,7 @@ Requirements for initial release. Each maps to roadmap phases.
 - [x] **FOUN-01**: SvelteKit project scaffolded with Svelte 5, TypeScript, Tailwind v4, adapter-node
 - [x] **FOUN-02**: Global layout with header, footer, and navigation matching current site structure
 - [x] **FOUN-03**: Responsive design working across mobile, tablet, and desktop breakpoints
-- [ ] **FOUN-04**: Homepage migrated from Framer with existing design (small tweaks allowed)
+- [x] **FOUN-04**: Homepage migrated from Framer with existing design (small tweaks allowed)
 
 ### Content
 
@@ -123,7 +123,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | FOUN-01 | Phase 1 | Complete |
 | FOUN-02 | Phase 1 | Complete |
 | FOUN-03 | Phase 1 | Complete |
-| FOUN-04 | Phase 1 | Pending |
+| FOUN-04 | Phase 1 | Complete |
 | CONT-01 | Phase 2 | Pending |
 | CONT-02 | Phase 2 | Pending |
 | CONT-03 | Phase 2 | Pending |
