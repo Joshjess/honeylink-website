@@ -50,17 +50,16 @@ Exceptions:
 
 ## Typography
 
-All values match Phase 1 established patterns. No new type roles introduced.
+All values match Phase 1 established patterns. Four type roles defined.
 
 | Role | Size | Weight | Line Height | Font | Tailwind Classes |
 |------|------|--------|-------------|------|-----------------|
-| Display (page h1) | 36/48/72px | 700 (bold) | 1.1 | Satoshi | `font-heading text-4xl md:text-5xl lg:text-7xl font-bold leading-tight` |
-| Heading (h2) | 30/36/48px | 700 (bold) | 1.2 | Satoshi | `font-heading text-3xl md:text-4xl lg:text-5xl font-bold` |
-| Subheading (h3) | 20/24px | 700 (bold) | 1.3 | Satoshi | `font-heading text-xl md:text-2xl font-bold` |
-| Body | 18px | 400 (regular) | 1.625 | Inter Variable | `text-lg text-brand-gray-dark leading-relaxed` |
-| Body small | 16px | 400 (regular) | 1.5 | Inter Variable | `text-base text-brand-gray-dark` |
-| Label / metadata | 14px | 500 (medium) | 1.4 | Inter Variable | `text-sm font-medium text-brand-gray-dark` |
-| Code | 16px | 400 (regular) | 1.5 | Fragment Mono | `font-mono text-base` |
+| Display | 36/48/72px | 700 (bold) | 1.1 | Satoshi | `font-heading text-4xl md:text-5xl lg:text-7xl font-bold leading-tight` |
+| Heading | 20/24/30/48px | 700 (bold) | 1.2 -- 1.3 | Satoshi | h2: `font-heading text-3xl md:text-4xl lg:text-5xl font-bold`; h3: `font-heading text-xl md:text-2xl font-bold` |
+| Body | 16/18px | 400 (regular) | 1.5 -- 1.625 | Inter Variable | Prose: `text-lg text-brand-gray-dark leading-relaxed`; Compact: `text-base text-brand-gray-dark`; Code inherits Body 16px via `font-mono text-base` (Fragment Mono) |
+| Label | 14px | 500 (medium) | 1.4 | Inter Variable | `text-sm font-medium text-brand-gray-dark` |
+
+Display is used for page h1 elements only. Heading covers both h2 and h3 levels through responsive size variants within a single role. Body covers prose paragraphs (text-lg, 18px) and compact UI text (text-base, 16px) as size variants within a single role; inline code and code blocks inherit the Body 16px tier using Fragment Mono. Label covers metadata, tags, dates, and reading time.
 
 ### Prose / Markdown Typography
 
@@ -179,7 +178,7 @@ Layout from top to bottom (matching Framer service page pattern):
    - Problem/solution pairs styled as cards or list items
 5. **Mini CTA / inquiry block** -- bg-brand-gold rounded-2xl p-8, centered
    - h4 heading: "Nieuwsgierig? We vertellen je graag meer!"
-   - Button link to /contact
+   - Button link to /contact, label: "Neem contact op"
 6. **Testimonials section** -- reuse TestimonialsSection component from homepage
 7. **FAQ section** -- bg-brand-gray-light
    - h2 "Veelgestelde vragen"
@@ -289,6 +288,7 @@ All copy is in Dutch. Variable/file names remain in English.
 | Reading time format | "[N] min leestijd" |
 | FAQ section heading | "Veelgestelde vragen" |
 | Service page mini CTA heading | "Nieuwsgierig? We vertellen je graag meer!" |
+| Service page mini CTA button | "Neem contact op" |
 | Empty state heading (blog listing) | "Nog geen blogs gepubliceerd" |
 | Empty state body (blog listing) | "We zijn druk bezig met het schrijven van nieuwe content. Kom binnenkort terug!" |
 | Empty state heading (case listing) | "Nog geen cases gepubliceerd" |
