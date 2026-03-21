@@ -1,4 +1,7 @@
-export const load = () => ({
+import type { PageLoad } from './$types';
+
+export const load: PageLoad = ({ data }) => ({
+	...data,
 	seo: {
 		title: 'Contact | HoneyLink',
 		description:

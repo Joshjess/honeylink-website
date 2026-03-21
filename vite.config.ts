@@ -48,5 +48,22 @@ export default defineConfig({
 		enhancedImages(),
 		tailwindcss(),
 		sveltekit()
-	]
+	],
+	ssr: {
+		// Force these through Vite's pipeline so stubOptionalPeerDeps() can
+		// intercept them during SSR (Node's loader would bypass the plugin).
+		noExternal: [
+			'valibot',
+			'@valibot/to-json-schema',
+			'arktype',
+			'@effect/schema',
+			'joi',
+			'yup',
+			'@vinejs/vine',
+			'@sinclair/typebox',
+			'superstruct',
+			'class-validator',
+			'class-transformer'
+		]
+	}
 });

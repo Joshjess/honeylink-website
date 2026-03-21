@@ -7,7 +7,7 @@
 	import { JsonLd } from 'svelte-meta-tags';
 	import { contactFaqItems, contactDetails } from '$lib/data/contact';
 
-	let { data } = $props();
+	const { data } = $props();
 	const { form, errors, constraints, message, enhance, delayed } = superForm(data.form);
 
 	$effect(() => {
