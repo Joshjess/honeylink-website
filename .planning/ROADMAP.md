@@ -36,21 +36,24 @@ Plans:
 - [x] 01-03-PLAN.md -- Homepage with all sections matching honeylink.nl
 
 ### Phase 2: Content and Pages
-**Goal**: Every content page on honeylink.nl exists in the SvelteKit site -- all 15 blog posts, 5 case studies, 7 service pages, about page, and 3 legal pages are browsable
+**Goal**: Every content page on honeylink.nl exists in the SvelteKit site -- all 16 blog posts, 5 case studies, 7 service pages, about page, and 3 legal pages are browsable
 **Depends on**: Phase 1
 **Requirements**: CONT-01, CONT-02, CONT-03, CONT-04, CONT-05, CONT-06, CONT-07, CONT-08, CONT-09, SERV-01, SERV-02, SERV-03, SERV-04, SERV-05, SERV-06, SERV-07, STAT-01, STAT-02, STAT-03, STAT-04
 **Success Criteria** (what must be TRUE):
-  1. Visiting /blogs shows a listing of all 15 blog posts with titles, excerpts, and dates
+  1. Visiting /blogs shows a listing of all 16 blog posts with titles, excerpts, and dates
   2. Visiting /blogs/[any-existing-slug] renders the full blog post from Markdown with reading time displayed
   3. Visiting /cases shows a listing of all 5 case studies with titles and excerpts
   4. Visiting /cases/[any-existing-slug] renders the full case study from Markdown
   5. All 7 service pages (/automation, /data-verrijking, /api, /maatwerk-software, /offerte-automatisering, /ai-agent, /chatbot), /over-ons, and 3 legal pages (/terms-conditions, /betalings-voorwaarden, /privacy-policy) render with content matching the Framer originals
-**Plans**: TBD
+**Plans**: 6 plans
 
 Plans:
-- [ ] 02-01: TBD
-- [ ] 02-02: TBD
-- [ ] 02-03: TBD
+- [ ] 02-01-PLAN.md -- mdsvex pipeline, content types, content helpers, and 9 shared UI components
+- [ ] 02-02-PLAN.md -- Migrate 16 blog posts to Markdown and create blog listing + post routes
+- [ ] 02-03-PLAN.md -- Migrate 5 case studies to Markdown and create case listing + post routes
+- [ ] 02-04-PLAN.md -- Create all 7 service pages with typed content data and shared layout
+- [ ] 02-05-PLAN.md -- About page with team/mission/FAQ and 3 legal pages from Markdown
+- [ ] 02-06-PLAN.md -- Visual verification checkpoint for all content pages
 
 ### Phase 3: Functionality and SEO
 **Goal**: The site has a working contact form that delivers email, comprehensive SEO coverage on every page, and security hardening -- making it production-ready
@@ -91,7 +94,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 0/3 | Planning complete | - |
-| 2. Content and Pages | 0/3 | Not started | - |
+| 1. Foundation | 3/3 | Complete | - |
+| 2. Content and Pages | 0/6 | Planning complete | - |
 | 3. Functionality and SEO | 0/3 | Not started | - |
 | 4. Deployment | 0/2 | Not started | - |
