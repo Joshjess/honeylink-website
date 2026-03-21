@@ -51,8 +51,8 @@ Plans:
 - [x] 02-01-PLAN.md -- mdsvex pipeline, content types, content helpers, and 9 shared UI components
 - [x] 02-02-PLAN.md -- Migrate 16 blog posts to Markdown and create blog listing + post routes
 - [x] 02-03-PLAN.md -- Migrate 5 case studies to Markdown and create case listing + post routes
-- [ ] 02-04-PLAN.md -- Create all 7 service pages with typed content data and shared layout
-- [ ] 02-05-PLAN.md -- About page with team/mission/FAQ and 3 legal pages from Markdown
+- [x] 02-04-PLAN.md -- Create all 7 service pages with typed content data and shared layout
+- [x] 02-05-PLAN.md -- About page with team/mission/FAQ and 3 legal pages from Markdown
 - [ ] 02-06-PLAN.md -- Visual verification checkpoint for all content pages
 
 ### Phase 3: Functionality and SEO

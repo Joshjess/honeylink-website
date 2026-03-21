@@ -3,13 +3,13 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: unknown
-stopped_at: Completed 02-03-PLAN.md
-last_updated: "2026-03-21T11:40:27.112Z"
+stopped_at: Completed 02-05-PLAN.md
+last_updated: "2026-03-21T11:44:42.542Z"
 progress:
   total_phases: 4
   completed_phases: 1
   total_plans: 9
-  completed_plans: 6
+  completed_plans: 8
 ---
 
 # Project State
@@ -24,7 +24,7 @@ See: .planning/PROJECT.md (updated 2026-03-20)
 ## Current Position
 
 Phase: 02 (content-and-pages) — EXECUTING
-Plan: 4 of 6
+Plan: 6 of 6
 
 ## Performance Metrics
 
@@ -52,6 +52,7 @@ Plan: 4 of 6
 | Phase 02 P01 | 3min | 2 tasks | 17 files |
 | Phase 02 P02 | 4min | 2 tasks | 37 files |
 | Phase 02 P03 | 5min | 2 tasks | 4 files |
+| Phase 02 P05 | 8min | 2 tasks | 15 files |
 
 ## Accumulated Context
 
@@ -78,6 +79,9 @@ Recent decisions affecting current work:
 - [Phase 02]: Svelte 5 dynamic component syntax ($derived + direct render) instead of deprecated svelte:component
 - [Phase 02]: Task 1 case study content pre-committed by parallel agent; verified against acceptance criteria
 - [Phase 02]: Case study pages omit readingTime, use gold hero background to differentiate from blog pages
+- [Phase 02]: Used template literal dynamic import for .md files to bypass TypeScript rewriteRelativeImportExtensions restriction
+- [Phase 02]: Used $derived() for dynamic Svelte component rendering instead of deprecated svelte:component
+- [Phase 02]: FAQ answers 2-5 written based on site context (not in scrape -- collapsed accordion)
 
 ### Pending Todos
 
@@ -90,6 +94,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-21T11:40:27.109Z
-Stopped at: Completed 02-03-PLAN.md
+Last session: 2026-03-21T11:44:31.604Z
+Stopped at: Completed 02-05-PLAN.md
 Resume file: None

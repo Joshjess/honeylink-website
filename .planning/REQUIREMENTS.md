@@ -38,10 +38,10 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Static Pages
 
-- [ ] **STAT-01**: /over-ons (about) page migrated from Framer
-- [ ] **STAT-02**: /terms-conditions legal page migrated from Framer
-- [ ] **STAT-03**: /betalings-voorwaarden legal page migrated from Framer
-- [ ] **STAT-04**: /privacy-policy legal page migrated from Framer
+- [x] **STAT-01**: /over-ons (about) page migrated from Framer
+- [x] **STAT-02**: /terms-conditions legal page migrated from Framer
+- [x] **STAT-03**: /betalings-voorwaarden legal page migrated from Framer
+- [x] **STAT-04**: /privacy-policy legal page migrated from Framer
 
 ### Contact
 
@@ -140,10 +140,10 @@ Which phases cover which requirements. Updated during roadmap creation.
 | SERV-05 | Phase 2 | Pending |
 | SERV-06 | Phase 2 | Pending |
 | SERV-07 | Phase 2 | Pending |
-| STAT-01 | Phase 2 | Pending |
-| STAT-02 | Phase 2 | Pending |
-| STAT-03 | Phase 2 | Pending |
-| STAT-04 | Phase 2 | Pending |
+| STAT-01 | Phase 2 | Complete |
+| STAT-02 | Phase 2 | Complete |
+| STAT-03 | Phase 2 | Complete |
+| STAT-04 | Phase 2 | Complete |
 | CNTC-01 | Phase 3 | Pending |
 | CNTC-02 | Phase 3 | Pending |
 | CNTC-03 | Phase 3 | Pending |
