@@ -1,6 +1,6 @@
 <script lang="ts">
-	import type { NavLink } from '$lib/types';
-	import { page } from '$app/state';
+	import type { NavLink } from "$lib/types";
+	import { page } from "$app/state";
 
 	let { links }: { links: NavLink[] } = $props();
 
@@ -22,9 +22,10 @@
 				class="relative"
 				onmouseenter={() => handleMouseEnter(link.label)}
 				onmouseleave={handleMouseLeave}
+				role="presentation"
 			>
 				<button
-					class="px-3 py-2 text-sm font-medium text-brand-gray-dark hover:text-brand-black transition-colors rounded-md"
+					class="px-3 py-2 text-lg font-medium text-brand-gray-dark hover:text-brand-black transition-colors rounded-md"
 					aria-expanded={openDropdown === link.label}
 				>
 					{link.label}
@@ -49,8 +50,9 @@
 						{#each link.children as child}
 							<a
 								href={child.href}
-								class="block px-4 py-2 text-sm text-brand-gray-dark hover:bg-brand-gray-light hover:text-brand-black transition-colors"
-								class:text-brand-purple={page.url.pathname === child.href}
+								class="block px-4 py-2 text-lg text-brand-gray-dark hover:bg-brand-gray-light hover:text-brand-black transition-colors"
+								class:text-brand-purple={page.url.pathname ===
+									child.href}
 							>
 								{child.label}
 							</a>
@@ -61,7 +63,7 @@
 		{:else}
 			<a
 				href={link.href}
-				class="px-3 py-2 text-sm font-medium text-brand-gray-dark hover:text-brand-black transition-colors rounded-md"
+				class="px-3 py-2 text-lg font-medium text-brand-gray-dark hover:text-brand-black transition-colors rounded-md"
 				class:text-brand-purple={page.url.pathname === link.href}
 			>
 				{link.label}

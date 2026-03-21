@@ -27,6 +27,9 @@
 			featured: false
 		}
 	];
+
+	const featured = testimonials.find((t) => t.featured)!;
+	const others = testimonials.filter((t) => !t.featured);
 </script>
 
 <section
@@ -40,39 +43,54 @@
 			Wat ondernemers zeggen
 		</h2>
 
-		<div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-			{#each testimonials as testimonial}
-				<div
-					class="rounded-2xl p-8 {testimonial.featured
-						? 'bg-brand-gold lg:row-span-1'
-						: 'bg-brand-gray-light'}"
-				>
-					<blockquote class="mb-6">
-						<p
-							class="text-brand-black {testimonial.featured
-								? 'text-lg font-medium leading-relaxed'
-								: 'leading-relaxed'}"
-						>
-							&ldquo;{testimonial.quote}&rdquo;
-						</p>
-					</blockquote>
-					<div class="flex items-center gap-4">
-						<img
-							src={testimonial.image}
-							alt={testimonial.name}
-							class="w-12 h-12 rounded-full object-cover"
-						/>
-						<div>
-							<p class="font-heading font-bold text-brand-black">
-								{testimonial.name}
-							</p>
-							<p class="text-sm text-brand-gray-dark">
-								{testimonial.role}
-							</p>
-						</div>
+		<div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+			<!-- Featured testimonial (larger, left side) -->
+			<div class="rounded-2xl bg-brand-gold p-8 md:p-10 flex flex-col justify-between">
+				<blockquote class="mb-8">
+					<p class="text-lg md:text-xl font-medium leading-relaxed text-brand-black">
+						&ldquo;{featured.quote}&rdquo;
+					</p>
+				</blockquote>
+				<div class="flex items-center gap-4">
+					<img
+						src={featured.image}
+						alt={featured.name}
+						class="w-12 h-12 rounded-full object-cover"
+					/>
+					<div>
+						<p class="font-heading font-bold text-brand-black">{featured.name}</p>
+						<p class="text-sm text-brand-gray-dark">{featured.role}</p>
 					</div>
 				</div>
-			{/each}
+			</div>
+
+			<!-- Other testimonials (stacked, right side) -->
+			<div class="flex flex-col gap-6">
+				{#each others as testimonial}
+					<div class="rounded-2xl bg-brand-gray-light p-6 md:p-8 flex flex-col justify-between flex-1">
+						<blockquote class="mb-6">
+							<p class="leading-relaxed text-brand-black">
+								&ldquo;{testimonial.quote}&rdquo;
+							</p>
+						</blockquote>
+						<div class="flex items-center gap-4">
+							<img
+								src={testimonial.image}
+								alt={testimonial.name}
+								class="w-10 h-10 rounded-full object-cover"
+							/>
+							<div>
+								<p class="font-heading font-bold text-sm text-brand-black">
+									{testimonial.name}
+								</p>
+								<p class="text-xs text-brand-gray-dark">
+									{testimonial.role}
+								</p>
+							</div>
+						</div>
+					</div>
+				{/each}
+			</div>
 		</div>
 	</div>
 </section>
