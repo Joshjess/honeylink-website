@@ -328,5 +328,30 @@
 	</div>
 </section>
 
+<!-- Calendly scheduling section -->
+<section class="mx-auto max-w-7xl px-4 py-16 md:py-24">
+	<div
+		use:inview
+		class="opacity-0 translate-y-4 transition-all duration-700 ease-out [&.in-view]:opacity-100 [&.in-view]:translate-y-0 text-center mb-12"
+	>
+		<h2 class="font-heading text-3xl md:text-4xl font-bold text-brand-black mb-4">
+			Plan direct een adviesgesprek
+		</h2>
+		<p class="text-lg text-brand-gray-dark max-w-2xl mx-auto">
+			Kies een moment dat jou uitkomt. Het gesprek is vrijblijvend en duurt ongeveer 30 minuten.
+		</p>
+	</div>
+	<div class="rounded-2xl overflow-hidden border border-gray-100 shadow-sm bg-white">
+		<iframe
+			src="https://calendly.com/joshua-honeylink/advies-gesprek?hide_gdpr_banner=1"
+			title="Plan een adviesgesprek met HoneyLink"
+			width="100%"
+			height="700"
+			frameborder="0"
+			loading="lazy"
+		></iframe>
+	</div>
+</section>
+
 <!-- FAQ section -->
 <FaqAccordion items={contactFaqItems} heading="Veelgestelde vragen." />
