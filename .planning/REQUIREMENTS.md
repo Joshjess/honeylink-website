@@ -16,15 +16,15 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Content
 
-- [ ] **CONT-01**: Markdown CMS pipeline for blog posts with frontmatter schema (title, date, slug, excerpt, image, author)
+- [x] **CONT-01**: Markdown CMS pipeline for blog posts with frontmatter schema (title, date, slug, excerpt, image, author)
 - [ ] **CONT-02**: Blog listing page at /blogs showing all posts with pagination or scroll
 - [ ] **CONT-03**: Individual blog post pages at /blogs/[slug] rendered from Markdown
 - [ ] **CONT-04**: All 15 existing blog posts migrated from Framer to Markdown files
-- [ ] **CONT-05**: Markdown CMS pipeline for case studies with frontmatter schema (title, client, industry, slug, excerpt, image)
+- [x] **CONT-05**: Markdown CMS pipeline for case studies with frontmatter schema (title, client, industry, slug, excerpt, image)
 - [ ] **CONT-06**: Case study listing page at /cases showing all cases
 - [ ] **CONT-07**: Individual case study pages at /cases/[slug] rendered from Markdown
 - [ ] **CONT-08**: All 5 existing case studies migrated from Framer to Markdown files
-- [ ] **CONT-09**: Reading time estimate displayed on blog posts
+- [x] **CONT-09**: Reading time estimate displayed on blog posts
 
 ### Services
 
@@ -124,15 +124,15 @@ Which phases cover which requirements. Updated during roadmap creation.
 | FOUN-02 | Phase 1 | Complete |
 | FOUN-03 | Phase 1 | Complete |
 | FOUN-04 | Phase 1 | Complete |
-| CONT-01 | Phase 2 | Pending |
+| CONT-01 | Phase 2 | Complete |
 | CONT-02 | Phase 2 | Pending |
 | CONT-03 | Phase 2 | Pending |
 | CONT-04 | Phase 2 | Pending |
-| CONT-05 | Phase 2 | Pending |
+| CONT-05 | Phase 2 | Complete |
 | CONT-06 | Phase 2 | Pending |
 | CONT-07 | Phase 2 | Pending |
 | CONT-08 | Phase 2 | Pending |
-| CONT-09 | Phase 2 | Pending |
+| CONT-09 | Phase 2 | Complete |
 | SERV-01 | Phase 2 | Pending |
 | SERV-02 | Phase 2 | Pending |
 | SERV-03 | Phase 2 | Pending |
