@@ -16,6 +16,12 @@ export const load: PageLoad = async ({ params }) => {
 			meta: {
 				...post.metadata,
 				readingTime: estimateReadingTime(raw.default)
+			},
+			seo: {
+				title: `${post.metadata.title} | HoneyLink`,
+				description: post.metadata.excerpt,
+				image: `https://honeylink.nl${post.metadata.image}`,
+				type: 'article'
 			}
 		};
 	} catch {

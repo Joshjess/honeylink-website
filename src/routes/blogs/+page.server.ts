@@ -3,5 +3,12 @@ import type { PageServerLoad } from './$types';
 
 export const load: PageServerLoad = async () => {
 	const posts = getBlogPosts();
-	return { posts };
+	return {
+		posts,
+		seo: {
+			title: 'Blogs | HoneyLink',
+			description:
+				'Lees onze laatste artikelen over automatisering, AI-agents, chatbots en bedrijfsoptimalisatie.'
+		}
+	};
 };

@@ -3,5 +3,12 @@ import type { PageServerLoad } from './$types';
 
 export const load: PageServerLoad = async () => {
 	const cases = getCases();
-	return { cases };
+	return {
+		cases,
+		seo: {
+			title: 'Cases | HoneyLink',
+			description:
+				'Bekijk onze succesverhalen en ontdek hoe wij bedrijven helpen met automatisering en AI-oplossingen.'
+		}
+	};
 };
