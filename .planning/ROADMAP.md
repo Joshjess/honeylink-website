@@ -71,7 +71,7 @@ Plans:
 - [x] 03-01-PLAN.md -- Contact form with Superforms + Zod validation, Resend email delivery, rate limiting, and FAQ section
 - [x] 03-02-PLAN.md -- SEO meta tags on all pages via svelte-meta-tags, sitemap.xml endpoint, robots.txt, OG default image
 - [x] 03-03-PLAN.md -- Security headers (CSP) in hooks.server.ts and enhanced-img image optimization
-- [ ] 03-04-PLAN.md -- JSON-LD structured data on all pages and visual verification checkpoint
+- [x] 03-04-PLAN.md -- JSON-LD structured data on all pages and visual verification checkpoint
 
 ### Phase 4: Deployment
 **Goal**: The site is live at honeylink.nl on Hetzner VPS with automatic HTTPS, process management, and a repeatable deploy pipeline

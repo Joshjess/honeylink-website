@@ -58,7 +58,7 @@ Requirements for initial release. Each maps to roadmap phases.
 - [x] **SEO-03**: Open Graph and Twitter card meta tags on every page
 - [x] **SEO-04**: Auto-generated sitemap.xml with all routes
 - [x] **SEO-05**: Canonical URLs on all pages
-- [ ] **SEO-06**: Structured data (JSON-LD) -- Organization on homepage, Article on blogs, Service on service pages
+- [x] **SEO-06**: Structured data (JSON-LD) -- Organization on homepage, Article on blogs, Service on service pages
 - [x] **SEO-07**: robots.txt configured correctly
 - [x] **SEO-08**: Image optimization with AVIF/WebP automatic conversion
 
@@ -154,7 +154,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | SEO-03 | Phase 3 | Complete |
 | SEO-04 | Phase 3 | Complete |
 | SEO-05 | Phase 3 | Complete |
-| SEO-06 | Phase 3 | Pending |
+| SEO-06 | Phase 3 | Complete |
 | SEO-07 | Phase 3 | Complete |
 | SEO-08 | Phase 3 | Complete |
 | SECR-01 | Phase 3 | Complete |
