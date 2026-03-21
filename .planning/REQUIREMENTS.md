@@ -21,9 +21,9 @@ Requirements for initial release. Each maps to roadmap phases.
 - [x] **CONT-03**: Individual blog post pages at /blogs/[slug] rendered from Markdown
 - [x] **CONT-04**: All 15 existing blog posts migrated from Framer to Markdown files
 - [x] **CONT-05**: Markdown CMS pipeline for case studies with frontmatter schema (title, client, industry, slug, excerpt, image)
-- [ ] **CONT-06**: Case study listing page at /cases showing all cases
-- [ ] **CONT-07**: Individual case study pages at /cases/[slug] rendered from Markdown
-- [ ] **CONT-08**: All 5 existing case studies migrated from Framer to Markdown files
+- [x] **CONT-06**: Case study listing page at /cases showing all cases
+- [x] **CONT-07**: Individual case study pages at /cases/[slug] rendered from Markdown
+- [x] **CONT-08**: All 5 existing case studies migrated from Framer to Markdown files
 - [x] **CONT-09**: Reading time estimate displayed on blog posts
 
 ### Services
@@ -129,9 +129,9 @@ Which phases cover which requirements. Updated during roadmap creation.
 | CONT-03 | Phase 2 | Complete |
 | CONT-04 | Phase 2 | Complete |
 | CONT-05 | Phase 2 | Complete |
-| CONT-06 | Phase 2 | Pending |
-| CONT-07 | Phase 2 | Pending |
-| CONT-08 | Phase 2 | Pending |
+| CONT-06 | Phase 2 | Complete |
+| CONT-07 | Phase 2 | Complete |
+| CONT-08 | Phase 2 | Complete |
 | CONT-09 | Phase 2 | Complete |
 | SERV-01 | Phase 2 | Pending |
 | SERV-02 | Phase 2 | Pending |
