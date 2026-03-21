@@ -45,11 +45,11 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Contact
 
-- [ ] **CNTC-01**: Contact form at /contact with name, email, company, message fields
-- [ ] **CNTC-02**: Form validation with Superforms + Zod (client and server-side)
-- [ ] **CNTC-03**: Email delivery of form submissions via Resend
-- [ ] **CNTC-04**: Rate limiting on contact form (5 submissions per IP per hour)
-- [ ] **CNTC-05**: Success/error feedback after form submission
+- [x] **CNTC-01**: Contact form at /contact with name, email, company, message fields
+- [x] **CNTC-02**: Form validation with Superforms + Zod (client and server-side)
+- [x] **CNTC-03**: Email delivery of form submissions via Resend
+- [x] **CNTC-04**: Rate limiting on contact form (5 submissions per IP per hour)
+- [x] **CNTC-05**: Success/error feedback after form submission
 
 ### SEO
 
@@ -66,8 +66,8 @@ Requirements for initial release. Each maps to roadmap phases.
 
 - [x] **SECR-01**: CSP headers configured in hooks.server.ts
 - [x] **SECR-02**: HTTPS enforced via Caddy with automatic Let's Encrypt certificates
-- [ ] **SECR-03**: Input sanitization on contact form
-- [ ] **SECR-04**: Environment variables for secrets (Resend API key) -- never in client bundle
+- [x] **SECR-03**: Input sanitization on contact form
+- [x] **SECR-04**: Environment variables for secrets (Resend API key) -- never in client bundle
 
 ### Deployment
 
@@ -144,11 +144,11 @@ Which phases cover which requirements. Updated during roadmap creation.
 | STAT-02 | Phase 2 | Complete |
 | STAT-03 | Phase 2 | Complete |
 | STAT-04 | Phase 2 | Complete |
-| CNTC-01 | Phase 3 | Pending |
-| CNTC-02 | Phase 3 | Pending |
-| CNTC-03 | Phase 3 | Pending |
-| CNTC-04 | Phase 3 | Pending |
-| CNTC-05 | Phase 3 | Pending |
+| CNTC-01 | Phase 3 | Complete |
+| CNTC-02 | Phase 3 | Complete |
+| CNTC-03 | Phase 3 | Complete |
+| CNTC-04 | Phase 3 | Complete |
+| CNTC-05 | Phase 3 | Complete |
 | SEO-01 | Phase 3 | Complete |
 | SEO-02 | Phase 3 | Complete |
 | SEO-03 | Phase 3 | Complete |
@@ -159,8 +159,8 @@ Which phases cover which requirements. Updated during roadmap creation.
 | SEO-08 | Phase 3 | Complete |
 | SECR-01 | Phase 3 | Complete |
 | SECR-02 | Phase 3 | Complete |
-| SECR-03 | Phase 3 | Pending |
-| SECR-04 | Phase 3 | Pending |
+| SECR-03 | Phase 3 | Complete |
+| SECR-04 | Phase 3 | Complete |
 | DEPL-01 | Phase 4 | Pending |
 | DEPL-02 | Phase 4 | Pending |
 | DEPL-03 | Phase 4 | Pending |
