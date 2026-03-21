@@ -5,10 +5,9 @@ import readingTime from 'reading-time';
 export const load: PageLoad = async ({ params }) => {
 	try {
 		const post = await import(`../../../content/blogs/${params.slug}.md`);
+		const raw = await import(`../../../content/blogs/${params.slug}.md?raw`);
 
-		// Calculate reading time from rendered HTML
-		const html = post.default?.render?.()?.html ?? '';
-		const stats = readingTime(html.replace(/<[^>]*>/g, ''));
+		const stats = readingTime(raw.default);
 
 		return {
 			content: post.default,

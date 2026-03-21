@@ -21,28 +21,28 @@
 	class="bg-white opacity-0 translate-y-4 transition-all duration-700 ease-out [&.in-view]:opacity-100 [&.in-view]:translate-y-0"
 >
 	<div class="mx-auto max-w-7xl px-4 py-16 md:py-24">
-		<div class="lg:grid lg:grid-cols-2 lg:gap-12 lg:items-center">
+		<div class="lg:grid lg:grid-cols-2 lg:gap-12 lg:items-start">
 			<div>
-				<p class="text-brand-purple font-heading font-bold text-lg mb-4">
-					Missie: {missionSubtext}
-				</p>
-				<h2
-					class="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-brand-black mb-6"
-				>
-					{missionHeading}
-				</h2>
-				{#each missionParagraphs as paragraph}
-					<p class="text-lg text-brand-gray-dark leading-relaxed mb-4">
-						{paragraph}
-					</p>
-				{/each}
-			</div>
-			<div class="mt-8 lg:mt-0">
 				<img
 					src="/images/about/team-office.jpg"
 					alt="HoneyLink team aan het werk"
 					class="rounded-2xl w-full h-auto"
 				/>
+			</div>
+			<div class="mt-8 lg:mt-0">
+				<h2
+					class="font-heading text-3xl md:text-4xl font-bold text-brand-black mb-6"
+				>
+					{missionHeading}
+				</h2>
+				{#each missionParagraphs as paragraph}
+					<p class="text-brand-gray-dark leading-relaxed mb-4">
+						{paragraph}
+					</p>
+				{/each}
+				<p class="text-brand-purple font-heading font-bold mt-6 border-l-4 border-brand-gold pl-4">
+					{missionSubtext}
+				</p>
 			</div>
 		</div>
 	</div>

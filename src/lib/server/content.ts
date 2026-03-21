@@ -4,8 +4,13 @@ import readingTime from 'reading-time';
 export function getBlogPosts(): BlogPost[] {
 	const paths = import.meta.glob<{
 		metadata: Omit<BlogPost, 'readingTime'>;
-		default: { render: () => { html: string } };
 	}>('/src/content/blogs/*.md', { eager: true });
+
+	const rawPaths = import.meta.glob<string>('/src/content/blogs/*.md', {
+		eager: true,
+		query: '?raw',
+		import: 'default'
+	});
 
 	const posts: BlogPost[] = [];
 
@@ -14,8 +19,8 @@ export function getBlogPosts(): BlogPost[] {
 		const metadata = file.metadata;
 
 		if (metadata?.published) {
-			const html = file.default?.render?.()?.html ?? '';
-			const stats = readingTime(html.replace(/<[^>]*>/g, ''));
+			const raw = rawPaths[path] ?? '';
+			const stats = readingTime(raw);
 			posts.push({
 				...metadata,
 				slug,
