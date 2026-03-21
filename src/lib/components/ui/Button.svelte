@@ -8,6 +8,7 @@
 		children,
 		onclick,
 		type = 'button',
+		class: extraClass = '',
 		...restProps
 	}: {
 		href?: string;
@@ -16,6 +17,7 @@
 		children: Snippet;
 		onclick?: (e: MouseEvent) => void;
 		type?: 'button' | 'submit';
+		class?: string;
 		[key: string]: unknown;
 	} = $props();
 
@@ -37,13 +39,13 @@
 </script>
 
 {#if href}
-	<a {href} class="{baseClasses} {variantClasses[variant]} {sizeClasses[size]}" {...restProps}>
+	<a {href} class="{baseClasses} {variantClasses[variant]} {sizeClasses[size]} {extraClass}" {...restProps}>
 		{@render children()}
 	</a>
 {:else}
 	<button
 		{type}
-		class="{baseClasses} {variantClasses[variant]} {sizeClasses[size]}"
+		class="{baseClasses} {variantClasses[variant]} {sizeClasses[size]} {extraClass}"
 		{onclick}
 		{...restProps}
 	>
