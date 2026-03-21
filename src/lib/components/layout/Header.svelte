@@ -21,7 +21,7 @@
 	<div class="mx-auto max-w-7xl flex items-center justify-between px-4 py-5">
 		<!-- Logo -->
 		<a href="/" class="flex-shrink-0">
-			<enhanced:img src="$lib/assets/logo.png" alt="HoneyLink" class="h-8" />
+			<img src="/images/honeylink-logo.png" alt="HoneyLink" class="h-8 w-auto" />
 		</a>
 
 		<!-- Desktop navigation -->
