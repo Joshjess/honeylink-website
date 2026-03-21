@@ -62,6 +62,7 @@ Phase 3 operative type contract (3 sizes, 2 weights). The full site type scale (
 - Form field placeholder text: 16px Inter weight 400, color brand-gray-dark
 - Validation error text: 14px Inter weight 400 (text-sm text-red-600)
 - Success banner text: 16px Inter weight 500 (text-base font-medium)
+- Success banner heading: 24px Satoshi weight 500 (font-heading font-medium text-2xl)
 - Form card heading ("Stuur ons een bericht"): 24px Satoshi weight 500 (font-heading font-medium text-2xl)
 
 **Note:** Page-level headings (h1 "Meer weten? Plan een adviesgesprek.") use the Phase 1 display scale (text-4xl md:text-5xl lg:text-7xl font-bold Satoshi). That scale is not part of this phase's operative contract -- it is inherited and unchanged.
@@ -248,7 +249,7 @@ When form submits successfully, the form card content is replaced with:
 ```html
 <div class="bg-green-50 border border-green-200 rounded-2xl p-8 text-center">
   <!-- Checkmark icon (inline SVG, 48px, text-green-600) -->
-  <h3 class="font-heading text-xl font-bold text-green-800 mt-4">
+  <h3 class="font-heading text-2xl font-medium text-green-800 mt-4">
     Bedankt voor uw bericht!
   </h3>
   <p class="text-green-800 mt-2">
