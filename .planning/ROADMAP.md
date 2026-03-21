@@ -53,7 +53,7 @@ Plans:
 - [x] 02-03-PLAN.md -- Migrate 5 case studies to Markdown and create case listing + post routes
 - [x] 02-04-PLAN.md -- Create all 7 service pages with typed content data and shared layout
 - [x] 02-05-PLAN.md -- About page with team/mission/FAQ and 3 legal pages from Markdown
-- [ ] 02-06-PLAN.md -- Visual verification checkpoint for all content pages
+- [x] 02-06-PLAN.md -- Visual verification checkpoint for all content pages
 
 ### Phase 3: Functionality and SEO
 **Goal**: The site has a working contact form that delivers email, comprehensive SEO coverage on every page, and security hardening -- making it production-ready
