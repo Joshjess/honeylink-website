@@ -1,6 +1,15 @@
 import { error } from '@sveltejs/kit';
 import type { PageLoad } from './$types';
 
+export const prerender = true;
+
+export function entries() {
+	const modules = import.meta.glob('/src/content/blogs/*.md', { eager: true });
+	return Object.keys(modules).map((path) => ({
+		slug: path.split('/').pop()!.replace('.md', '')
+	}));
+}
+
 function estimateReadingTime(text: string): number {
 	const words = text.trim().split(/\s+/).length;
 	return Math.max(1, Math.round(words / 200));

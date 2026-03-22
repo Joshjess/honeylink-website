@@ -1,3 +1,5 @@
+export const prerender = true;
+
 export const load = () => ({
 	seo: {
 		title: 'Over Ons | HoneyLink',

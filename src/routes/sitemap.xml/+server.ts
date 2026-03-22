@@ -2,6 +2,8 @@ import type { RequestHandler } from '@sveltejs/kit';
 import * as sitemap from 'super-sitemap';
 import { getBlogPosts, getCases } from '$lib/server/content';
 
+export const prerender = true;
+
 export const GET: RequestHandler = async () => {
 	const blogSlugs = getBlogPosts().map((p) => p.slug);
 	const caseSlugs = getCases().map((c) => c.slug);
