@@ -15,7 +15,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [ ] **Phase 1: Foundation** - SvelteKit scaffold, global layout, responsive design, and homepage
 - [ ] **Phase 2: Content and Pages** - Markdown CMS for blogs/cases, all 7 service pages, about page, and 3 legal pages
 - [ ] **Phase 3: Functionality and SEO** - Contact form with email delivery, SEO meta/sitemap/structured data, and security headers
-- [ ] **Phase 4: Deployment** - Hetzner VPS provisioning, Caddy reverse proxy, PM2 process management, deploy pipeline, and DNS cutover
+- [ ] **Phase 4: Deployment** - Docker Compose with Caddy reverse proxy, hybrid prerendering, Coolify CI/CD, and DNS cutover
 
 ## Phase Details
 
@@ -74,19 +74,19 @@ Plans:
 - [x] 03-04-PLAN.md -- JSON-LD structured data on all pages and visual verification checkpoint
 
 ### Phase 4: Deployment
-**Goal**: The site is live at honeylink.nl on Hetzner VPS with automatic HTTPS, process management, and a repeatable deploy pipeline
+**Goal**: The site is live at honeylink.nl on Hetzner VPS with automatic HTTPS, Docker-based process management, and a repeatable deploy pipeline via Coolify
 **Depends on**: Phase 3
 **Requirements**: DEPL-01, DEPL-02, DEPL-03, DEPL-04, DEPL-05
 **Success Criteria** (what must be TRUE):
   1. Visiting https://honeylink.nl serves the SvelteKit site with a valid TLS certificate
-  2. The Node.js process auto-restarts after a crash (PM2 process management)
-  3. Running the deploy script (git push or manual trigger) builds and restarts the site without downtime
+  2. The Node.js process auto-restarts after a crash (Docker restart policy)
+  3. Running the deploy script (git push to Coolify) builds and restarts the site without downtime
   4. All 36 existing URLs from the Framer site resolve correctly (no 404s for previously indexed pages)
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 04-01: TBD
-- [ ] 04-02: TBD
+- [ ] 04-01-PLAN.md -- Hybrid prerendering config, multi-stage Dockerfile, Docker Compose with Caddy, and deployment files
+- [ ] 04-02-PLAN.md -- VPS provisioning, Coolify deploy, and DNS cutover (human checkpoint)
 
 ## Progress
 
@@ -98,4 +98,4 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 | 1. Foundation | 3/3 | Complete | - |
 | 2. Content and Pages | 6/6 | Complete | - |
 | 3. Functionality and SEO | 0/4 | Planning complete | - |
-| 4. Deployment | 0/2 | Not started | - |
+| 4. Deployment | 0/2 | Planning complete | - |
