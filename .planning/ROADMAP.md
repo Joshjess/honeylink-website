@@ -86,7 +86,7 @@ Plans:
 
 Plans:
 - [x] 04-01-PLAN.md -- Hybrid prerendering config, multi-stage Dockerfile, Docker Compose with Caddy, and deployment files
-- [ ] 04-02-PLAN.md -- VPS provisioning, Coolify deploy, and DNS cutover (human checkpoint)
+- [x] 04-02-PLAN.md -- VPS provisioning, Coolify deploy, and DNS cutover (human checkpoint)
 
 ## Progress
 
@@ -95,7 +95,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 3/3 | Complete | - |
-| 2. Content and Pages | 6/6 | Complete | - |
-| 3. Functionality and SEO | 0/4 | Planning complete | - |
-| 4. Deployment | 0/2 | Planning complete | - |
+| 1. Foundation | 3/3 | Complete | 2026-03-22 |
+| 2. Content and Pages | 6/6 | Complete | 2026-03-22 |
+| 3. Functionality and SEO | 4/4 | Complete | 2026-03-22 |
+| 4. Deployment | 2/2 | Complete | 2026-03-22 |

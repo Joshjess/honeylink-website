@@ -75,7 +75,7 @@ Requirements for initial release. Each maps to roadmap phases.
 - [x] **DEPL-02**: Caddy reverse proxy with automatic HTTPS
 - [x] **DEPL-03**: PM2 process management for Node.js
 - [x] **DEPL-04**: Build and deployment pipeline (git push -> build -> restart)
-- [ ] **DEPL-05**: DNS migration from Framer to Hetzner VPS
+- [x] **DEPL-05**: DNS migration from Framer to Hetzner VPS
 
 ## v2 Requirements
 
@@ -165,7 +165,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | DEPL-02 | Phase 4 | Complete |
 | DEPL-03 | Phase 4 | Complete |
 | DEPL-04 | Phase 4 | Complete |
-| DEPL-05 | Phase 4 | Pending |
+| DEPL-05 | Phase 4 | Complete |
 
 **Coverage:**
 - v1 requirements: 46 total
