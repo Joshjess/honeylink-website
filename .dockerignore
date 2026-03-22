@@ -1,0 +1,16 @@
+node_modules
+build
+.svelte-kit
+.env
+.env.*
+!.env.example
+.git
+.gitignore
+.planning
+scripts
+.playwright-cli
+README.md
+CLAUDE.md
+CHANGELOG.md
+.vscode
+.idea
