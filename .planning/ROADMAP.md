@@ -85,7 +85,7 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 04-01-PLAN.md -- Hybrid prerendering config, multi-stage Dockerfile, Docker Compose with Caddy, and deployment files
+- [x] 04-01-PLAN.md -- Hybrid prerendering config, multi-stage Dockerfile, Docker Compose with Caddy, and deployment files
 - [ ] 04-02-PLAN.md -- VPS provisioning, Coolify deploy, and DNS cutover (human checkpoint)
 
 ## Progress

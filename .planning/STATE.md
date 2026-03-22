@@ -3,13 +3,13 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: unknown
-stopped_at: Completed 03-04-PLAN.md (JSON-LD structured data, awaiting human verification)
-last_updated: "2026-03-21T16:41:13.519Z"
+stopped_at: Completed 04-01-PLAN.md
+last_updated: "2026-03-22T19:21:51.143Z"
 progress:
   total_phases: 4
   completed_phases: 3
-  total_plans: 13
-  completed_plans: 13
+  total_plans: 15
+  completed_plans: 14
 ---
 
 # Project State
@@ -19,12 +19,12 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-20)
 
 **Core value:** Faithfully present HoneyLink's services and case studies with fast load times, strong SEO, and professional appearance -- replacing Framer without losing content, URLs, or search rankings.
-**Current focus:** Phase 03 — functionality-and-seo
+**Current focus:** Phase 04 — deployment
 
 ## Current Position
 
-Phase: 03 (functionality-and-seo) — EXECUTING
-Plan: 4 of 4
+Phase: 04 (deployment) — EXECUTING
+Plan: 2 of 2
 
 ## Performance Metrics
 
@@ -58,6 +58,7 @@ Plan: 4 of 4
 | Phase 03 P02 | 4min | 2 tasks | 21 files |
 | Phase 03 P01 | 10min | 2 tasks | 8 files |
 | Phase 03 P04 | 3min | 1 tasks | 17 files |
+| Phase 04 P01 | 7min | 2 tasks | 23 files |
 
 ## Accumulated Context
 
@@ -98,6 +99,9 @@ Recent decisions affecting current work:
 - [Phase 03]: bind:value on form inputs per superforms requirement (valid Svelte 5 syntax for native elements)
 - [Phase 03]: JsonLd component placed before first visible element in template, per svelte-meta-tags convention
 - [Phase 03]: BreadcrumbList uses absolute URLs for item property; last breadcrumb omits item per Google spec
+- [Phase 04]: Docker restart policy replaces PM2 (simpler, Coolify-native)
+- [Phase 04]: Caddy handles HTTPS + security headers at proxy level (defense-in-depth)
+- [Phase 04]: .dockerignore uses explicit exclusions to preserve src/content markdown for build
 
 ### Pending Todos
 
@@ -110,6 +114,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-21T16:41:13.516Z
-Stopped at: Completed 03-04-PLAN.md (JSON-LD structured data, awaiting human verification)
+Last session: 2026-03-22T19:21:51.140Z
+Stopped at: Completed 04-01-PLAN.md
 Resume file: None
