@@ -1,0 +1,2 @@
+[    2477ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:5174/favicon.ico:0
+[   16306ms] [WARNING] Datadog Browser SDK: No storage available for session. We will not send any data. @ https://assets.calendly.com/assets/booking/js/booking-63f91f3e5.js:59

@@ -19,28 +19,3 @@ services:
       timeout: 5s
       start_period: 10s
       retries: 3
-
-  caddy:
-    image: caddy:2-alpine
-    restart: unless-stopped
-    ports:
-      - "80:80"
-      - "443:443"
-      - "443:443/udp"
-    volumes:
-      - ./Caddyfile:/etc/caddy/Caddyfile:ro
-      - caddy_data:/data
-      - caddy_config:/config
-    networks:
-      - web
-    depends_on:
-      app:
-        condition: service_healthy
-
-volumes:
-  caddy_data:
-  caddy_config:
-
-networks:
-  web:
-    driver: bridge

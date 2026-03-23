@@ -1,0 +1,152 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - navigation [ref=e6]:
+      - generic [ref=e7]:
+        - link "Logo" [ref=e9] [cursor=pointer]:
+          - /url: ./
+          - img "Logo" [ref=e11]
+        - generic [ref=e12]:
+          - paragraph [ref=e14]:
+            - link "Home" [ref=e15] [cursor=pointer]:
+              - /url: ./
+          - paragraph [ref=e17]:
+            - link "Over Ons" [ref=e18] [cursor=pointer]:
+              - /url: ./over-ons
+          - paragraph [ref=e20]:
+            - link "Cases" [ref=e21] [cursor=pointer]:
+              - /url: ./cases
+          - paragraph [ref=e23]:
+            - link "Blogs" [ref=e24] [cursor=pointer]:
+              - /url: ./blogs
+          - paragraph [ref=e26]:
+            - link "Contact" [ref=e27] [cursor=pointer]:
+              - /url: ./contact
+        - button "Plan gratis adviesgesprek" [ref=e30] [cursor=pointer]:
+          - link "Plan gratis adviesgesprek" [ref=e31]:
+            - /url: ./contact
+            - paragraph [ref=e33]: Plan gratis adviesgesprek
+            - generic [ref=e34]:
+              - img [ref=e37]
+              - img [ref=e41]
+    - generic [ref=e43]:
+      - banner [ref=e44]:
+        - generic [ref=e45]:
+          - generic [ref=e46]:
+            - generic [ref=e47]:
+              - heading "Meer weten? Plan een adviesgesprek." [level=1] [ref=e49]:
+                - text: Meer weten?
+                - text: Plan een adviesgesprek.
+              - generic [ref=e50]:
+                - paragraph [ref=e51]: "Ontdek de verborgen kansen in jouw bedrijf. Door het implementeren van AI kan je efficiënter werken en kosten besparen. We werken volgens onze kernwaarden: Vlot, eenvoudig en resultaatgericht."
+                - paragraph [ref=e52]
+                - paragraph [ref=e53]: In een vrijblijvend adviesgesprek kijken we samen naar mogelijkheden, afgestemd op jouw specifieke situatie.
+                - paragraph [ref=e54]
+                - paragraph [ref=e55]: Plan je adviesgesprek in via de agenda
+            - generic [ref=e57]:
+              - generic [ref=e58]:
+                - generic [ref=e59]:
+                  - img [ref=e63]
+                  - heading "Bel Ons" [level=5] [ref=e66]
+                - paragraph [ref=e68]:
+                  - link "020 308 68 40" [ref=e69] [cursor=pointer]:
+                    - /url: "tel: +3120 308 68 40"
+              - generic [ref=e70]:
+                - generic [ref=e71]:
+                  - img [ref=e75]
+                  - heading "E-mail" [level=5] [ref=e78]
+                - paragraph [ref=e80]:
+                  - link "info@honeylink.nl" [ref=e81] [cursor=pointer]:
+                    - /url: "mailto: info@honeylink.nl"
+            - generic [ref=e83]:
+              - heading "Adres" [level=5] [ref=e89]
+              - generic [ref=e90]:
+                - generic [ref=e91]:
+                  - paragraph [ref=e92]:
+                    - link "M" [ref=e93] [cursor=pointer]:
+                      - /url: "mailto: support@chatassist.com"
+                    - text: arco Polostraat 275-3
+                  - paragraph [ref=e94]: 1056DN, Amsterdam
+                - generic [ref=e95]:
+                  - paragraph [ref=e96]: "KvK: 96561556"
+                  - paragraph [ref=e97]: "Btw-nummer: NL005216613B11"
+          - iframe [ref=e106]:
+            
+      - generic [ref=e108]:
+        - generic [ref=e109]:
+          - heading "Veelgestelde vragen." [level=2] [ref=e111]
+          - paragraph [ref=e113]: HoneyLink helpt ondernemers dagelijks met het automatiseren van hun bedrijfsprocessen middels chatbots en slimme workflows.
+        - generic [ref=e116]:
+          - generic [ref=e118] [cursor=pointer]:
+            - generic [ref=e119]:
+              - paragraph [ref=e121]: Wat zijn praktische voorbeelden van diensten die HoneyLink aanbiedt?
+              - img [ref=e125]
+            - generic [ref=e127]:
+              - paragraph [ref=e128]:
+                - text: Een
+                - strong [ref=e129]: automation
+                - text: kan je efficiënter laten werken door het vereenvoudigen van administratie en het verbinden van je systemen. Zo kan een ingevuld contactformulier automatisch een klantrecord aanmaken in je CRM, een API-koppeling tussen je webshop en boekhoudsysteem zorgt dat facturen direct worden verwerkt en klanten ontvangen automatisch een follow-up e-mail.
+              - paragraph [ref=e130]:
+                - text: Een
+                - strong [ref=e131]: chatbot
+                - text: "transformeert je klantenservice door 24/7 beschikbaar te zijn voor vragen en ondersteuning. Op maat getraind voor jouw bedrijf, kan de chatbot productadvies geven, bestellingen opvolgen, veelgestelde vragen beantwoorden en klanten ontzorgen bij routinematige problemen. Dit bespaart niet alleen tijd voor je team, maar zorgt ook voor consistente antwoorden en hogere klanttevredenheid. Bijvoorbeeld voor productdocumentatie: in plaats van handleidingen die niemand leest, biedt een chatbot interactieve hulp, precies wanneer je klanten het nodig hebben."
+              - paragraph [ref=e132]:
+                - text: Een
+                - strong [ref=e133]: AI-agent
+                - text: "helpt bij personeelsplanning (zoals voor een restaurant): analyseer drukke dagen, check beschikbaarheid van personeel en stel automatisch een weekschema op. Interesse? Vraag een gratis intakegesprek aan!"
+          - generic [ref=e136] [cursor=pointer]:
+            - paragraph [ref=e138]: Welke bedrijven hebben baat bij een samenwerking met HoneyLink?
+            - img [ref=e142]
+          - generic [ref=e146] [cursor=pointer]:
+            - paragraph [ref=e148]: Wat kan ik verwachten van een adviesgesprek?
+            - img [ref=e152]
+          - generic [ref=e156] [cursor=pointer]:
+            - paragraph [ref=e158]: Hoe ziet de samenwerking eruit nadat ik klant ben geworden bij HoneyLink?
+            - img [ref=e162]
+          - generic [ref=e166] [cursor=pointer]:
+            - paragraph [ref=e168]: Wat is een workflow automation?
+            - img [ref=e172]
+    - contentinfo [ref=e176]:
+      - generic [ref=e177]:
+        - generic [ref=e178]:
+          - generic [ref=e179]:
+            - link "Logo" [ref=e180] [cursor=pointer]:
+              - /url: ./
+              - img "Logo" [ref=e182]
+            - paragraph [ref=e184]: Van implementatie naar efficiëntie
+          - img [ref=e191] [cursor=pointer]
+        - generic [ref=e193]:
+          - generic [ref=e194]:
+            - paragraph [ref=e196]: Over HoneyLink
+            - paragraph [ref=e199]:
+              - link "Over ons" [ref=e200] [cursor=pointer]:
+                - /url: ./over-ons
+          - generic [ref=e201]:
+            - paragraph [ref=e203]: Hulpbronnen
+            - generic [ref=e204]:
+              - paragraph [ref=e206]:
+                - link "Blog" [ref=e207] [cursor=pointer]:
+                  - /url: ./blogs
+              - paragraph [ref=e209]:
+                - link "Cases" [ref=e210] [cursor=pointer]:
+                  - /url: ./cases
+              - paragraph [ref=e212]:
+                - link "Contact" [ref=e213] [cursor=pointer]:
+                  - /url: ./contact
+          - generic [ref=e214]:
+            - paragraph [ref=e216]: Bedrijfsinformatie
+            - generic [ref=e217]:
+              - paragraph [ref=e219]:
+                - link "Privacy policy" [ref=e220] [cursor=pointer]:
+                  - /url: ./privacy-policy
+              - paragraph [ref=e222]:
+                - link "Algemene voorwaarden" [ref=e223] [cursor=pointer]:
+                  - /url: ./terms-conditions
+              - paragraph [ref=e225]:
+                - link "Betalingsvoorwaarden" [ref=e226] [cursor=pointer]:
+                  - /url: ./betalings-voorwaarden
+      - paragraph [ref=e231]: © 2025 HoneyLink. All rights reserved.
+  - img [ref=e232]
+  - img [ref=e234]
+  - img [ref=e236]
+  - img [ref=e237]
+  - img [ref=e239]

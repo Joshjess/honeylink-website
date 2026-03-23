@@ -1,0 +1,160 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - link "HoneyLink" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - img "HoneyLink" [ref=e7]
+      - navigation [ref=e8]:
+        - link "Home" [ref=e9] [cursor=pointer]:
+          - /url: /
+        - link "Over Ons" [ref=e10] [cursor=pointer]:
+          - /url: /over-ons
+        - link "Cases" [ref=e11] [cursor=pointer]:
+          - /url: /cases
+        - link "Blogs" [ref=e12] [cursor=pointer]:
+          - /url: /blogs
+        - link "Contact" [ref=e13] [cursor=pointer]:
+          - /url: /contact
+      - link "Plan gratis adviesgesprek" [ref=e15] [cursor=pointer]:
+        - /url: /contact
+  - main [ref=e16]:
+    - generic [ref=e18]:
+      - generic [ref=e19]:
+        - heading "Meer weten? Plan een adviesgesprek." [level=1] [ref=e20]
+        - paragraph [ref=e21]: "Ontdek de verborgen kansen in jouw bedrijf. Door het implementeren van AI kan je efficienter werken en kosten besparen. We werken volgens onze kernwaarden: Vlot, eenvoudig en resultaatgericht."
+        - paragraph [ref=e22]: In een vrijblijvend adviesgesprek kijken we samen naar mogelijkheden, afgestemd op jouw specifieke situatie.
+        - generic [ref=e23]:
+          - generic [ref=e24]:
+            - img [ref=e26]
+            - generic [ref=e28]:
+              - paragraph [ref=e29]: Bel Ons
+              - link "020 308 68 40" [ref=e30] [cursor=pointer]:
+                - /url: tel:+31203086840
+          - generic [ref=e31]:
+            - img [ref=e33]
+            - generic [ref=e36]:
+              - paragraph [ref=e37]: E-mail
+              - link "info@honeylink.nl" [ref=e38] [cursor=pointer]:
+                - /url: mailto:info@honeylink.nl
+          - generic [ref=e39]:
+            - img [ref=e41]
+            - generic [ref=e44]:
+              - paragraph [ref=e45]: Adres
+              - paragraph [ref=e46]: Marco Polostraat 275-3, 1056DN Amsterdam
+          - generic [ref=e47]:
+            - img [ref=e49]
+            - generic [ref=e53]:
+              - paragraph [ref=e54]: KvK
+              - paragraph [ref=e55]: "96561556"
+          - generic [ref=e56]:
+            - img [ref=e58]
+            - generic [ref=e60]:
+              - paragraph [ref=e61]: Btw-nummer
+              - paragraph [ref=e62]: NL005216613B11
+      - generic [ref=e64]:
+        - heading "Stuur ons een bericht" [level=2] [ref=e65]
+        - generic [ref=e66]:
+          - generic [ref=e67]:
+            - generic [ref=e68]: Naam
+            - textbox "Naam" [ref=e69]:
+              - /placeholder: Uw volledige naam
+          - generic [ref=e70]:
+            - generic [ref=e71]: E-mail
+            - textbox "E-mail" [ref=e72]:
+              - /placeholder: uw@email.nl
+          - generic [ref=e73]:
+            - generic [ref=e74]: Bedrijf (optioneel)
+            - textbox "Bedrijf (optioneel)" [ref=e75]:
+              - /placeholder: Uw bedrijfsnaam (optioneel)
+          - generic [ref=e76]:
+            - generic [ref=e77]: Bericht
+            - textbox "Bericht" [ref=e78]:
+              - /placeholder: Hoe kunnen we u helpen?
+          - button "Verstuur bericht" [ref=e80]
+    - generic [ref=e81]:
+      - generic [ref=e82]:
+        - heading "Plan direct een adviesgesprek" [level=2] [ref=e83]
+        - paragraph [ref=e84]: Kies een moment dat jou uitkomt. Het gesprek is vrijblijvend en duurt ongeveer 30 minuten.
+      - iframe [ref=e86]:
+        
+    - generic [ref=e88]:
+      - heading "Veelgestelde vragen." [level=2] [ref=e89]
+      - generic [ref=e90]:
+        - button "Wat zijn praktische voorbeelden van diensten die HoneyLink aanbiedt?" [ref=e91]:
+          - generic [ref=e92]: Wat zijn praktische voorbeelden van diensten die HoneyLink aanbiedt?
+          - img [ref=e93]
+        - region:
+          - paragraph [ref=e95]: "Een automation kan je efficienter laten werken door het vereenvoudigen van administratie en het verbinden van je systemen. Zo kan een ingevuld contactformulier automatisch een klantrecord aanmaken in je CRM, een API-koppeling tussen je webshop en boekhoudsysteem zorgt dat facturen direct worden verwerkt en klanten ontvangen automatisch een follow-up e-mail. Een chatbot transformeert je klantenservice door 24/7 beschikbaar te zijn voor vragen en ondersteuning. Op maat getraind voor jouw bedrijf, kan de chatbot productadvies geven, bestellingen opvolgen, veelgestelde vragen beantwoorden en klanten ontzorgen bij routinematige problemen. Een AI-agent helpt bij personeelsplanning (zoals voor een restaurant): analyseer drukke dagen, check beschikbaarheid van personeel en stel automatisch een weekschema op. Interesse? Vraag een gratis intakegesprek aan!"
+      - generic [ref=e96]:
+        - button "Welke bedrijven hebben baat bij een samenwerking met HoneyLink?" [ref=e97]:
+          - generic [ref=e98]: Welke bedrijven hebben baat bij een samenwerking met HoneyLink?
+          - img [ref=e99]
+        - region:
+          - paragraph [ref=e101]: Elk bedrijf dat repetitieve processen wil automatiseren of slimmer wil werken met AI heeft baat bij HoneyLink. Denk aan MKB-bedrijven die hun administratie willen stroomlijnen, e-commerce bedrijven die hun klantenservice willen opschalen, of dienstverleners die hun offerteproces willen versnellen. Onze oplossingen zijn schaalbaar en worden op maat gemaakt voor jouw specifieke situatie.
+      - generic [ref=e102]:
+        - button "Wat kan ik verwachten van een adviesgesprek?" [ref=e103]:
+          - generic [ref=e104]: Wat kan ik verwachten van een adviesgesprek?
+          - img [ref=e105]
+        - region:
+          - paragraph [ref=e107]: In een vrijblijvend adviesgesprek van ongeveer 30 minuten bespreken we jouw huidige werkprocessen en identificeren we kansen voor automatisering. We kijken samen naar welke taken veel tijd kosten en hoe die efficienter kunnen. Na het gesprek ontvang je een concreet voorstel met mogelijke oplossingen en een indicatie van de investering.
+      - generic [ref=e108]:
+        - button "Hoe ziet de samenwerking eruit nadat ik klant ben geworden bij HoneyLink?" [ref=e109]:
+          - generic [ref=e110]: Hoe ziet de samenwerking eruit nadat ik klant ben geworden bij HoneyLink?
+          - img [ref=e111]
+        - region:
+          - paragraph [ref=e113]: Na het adviesgesprek stellen we een projectplan op met duidelijke mijlpalen en tijdlijn. Tijdens de implementatie houden we je wekelijks op de hoogte van de voortgang. Na oplevering bieden we ondersteuning en onderhoud zodat alles soepel blijft draaien. Onze kernwaarden zijn vlot, eenvoudig en resultaatgericht -- dat merk je in elke fase van de samenwerking.
+      - generic [ref=e114]:
+        - button "Wat is een workflow automation?" [ref=e115]:
+          - generic [ref=e116]: Wat is een workflow automation?
+          - img [ref=e117]
+        - region:
+          - paragraph [ref=e119]: Een workflow automation is het automatisch laten verlopen van een reeks stappen die normaal handmatig worden uitgevoerd. Denk aan het automatisch verwerken van inkomende e-mails, het aanmaken van taken in je projectmanagement tool, of het synchroniseren van data tussen verschillende systemen. Dit bespaart tijd, vermindert fouten en zorgt dat je team zich kan richten op werk dat er echt toe doet.
+  - contentinfo [ref=e120]:
+    - generic [ref=e121]:
+      - generic [ref=e122]:
+        - generic [ref=e123]:
+          - link "HoneyLink" [ref=e124] [cursor=pointer]:
+            - /url: /
+          - paragraph [ref=e125]: Van implementatie naar efficiëntie
+          - link "LinkedIn" [ref=e127] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/honeylink/
+            - img [ref=e128]
+        - generic [ref=e130]:
+          - heading "Over HoneyLink" [level=3] [ref=e131]
+          - list [ref=e132]:
+            - listitem [ref=e133]:
+              - link "Over ons" [ref=e134] [cursor=pointer]:
+                - /url: /over-ons
+        - generic [ref=e135]:
+          - heading "Hulpbronnen" [level=3] [ref=e136]
+          - list [ref=e137]:
+            - listitem [ref=e138]:
+              - link "Blog" [ref=e139] [cursor=pointer]:
+                - /url: /blogs
+            - listitem [ref=e140]:
+              - link "Cases" [ref=e141] [cursor=pointer]:
+                - /url: /cases
+            - listitem [ref=e142]:
+              - link "Contact" [ref=e143] [cursor=pointer]:
+                - /url: /contact
+        - generic [ref=e144]:
+          - heading "Bedrijfsinformatie" [level=3] [ref=e145]
+          - list [ref=e146]:
+            - listitem [ref=e147]:
+              - link "Privacy policy" [ref=e148] [cursor=pointer]:
+                - /url: /privacy-policy
+            - listitem [ref=e149]:
+              - link "Algemene voorwaarden" [ref=e150] [cursor=pointer]:
+                - /url: /terms-conditions
+            - listitem [ref=e151]:
+              - link "Betalingsvoorwaarden" [ref=e152] [cursor=pointer]:
+                - /url: /betalings-voorwaarden
+      - generic [ref=e153]:
+        - paragraph [ref=e154]: © 2026 HoneyLink. All rights reserved.
+        - generic [ref=e155]:
+          - link "Voorwaarden" [ref=e156] [cursor=pointer]:
+            - /url: /terms-conditions
+          - link "Betalingsvoorwaarden" [ref=e157] [cursor=pointer]:
+            - /url: /betalings-voorwaarden
+          - link "Privacy" [ref=e158] [cursor=pointer]:
+            - /url: /privacy-policy

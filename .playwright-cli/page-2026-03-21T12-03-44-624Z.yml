@@ -1,0 +1,129 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - link "HoneyLink" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - img "HoneyLink" [ref=e7]
+      - navigation [ref=e8]:
+        - link "Home" [ref=e9] [cursor=pointer]:
+          - /url: /
+        - link "Over Ons" [ref=e10] [cursor=pointer]:
+          - /url: /over-ons
+        - link "Cases" [ref=e11] [cursor=pointer]:
+          - /url: /cases
+        - link "Blogs" [ref=e12] [cursor=pointer]:
+          - /url: /blogs
+        - link "Contact" [ref=e13] [cursor=pointer]:
+          - /url: /contact
+      - link "Plan gratis adviesgesprek" [ref=e15] [cursor=pointer]:
+        - /url: /contact
+  - main [ref=e16]:
+    - heading "Over HoneyLink" [level=1] [ref=e19]
+    - generic [ref=e22]:
+      - img "HoneyLink team aan het werk" [ref=e24]
+      - generic [ref=e25]:
+        - heading "Ons doel is om jouw manier van werken efficienter te maken." [level=2] [ref=e26]
+        - paragraph [ref=e27]: HoneyLink is de specialist in digitale procesautomatisering voor de ondernemer of afdelingsmanager. Zie jij kansen binnen jouw werk? dan is HoneyLink de juiste partij. Onze missie is zorgen voor meer werkplezier door processen efficienter in te richten.
+        - paragraph [ref=e28]: Dat doen wij door complexe processen te vereenvoudigen en te automatiseren. De recente ontwikkelingen op het gebied van AI hebben de mogelijkheden exponentieel vergroot. We nemen je mee in de wereld van innovatieve technologieen en zorgen voor een implementatieplan afgestemd op jouw specifieke behoeften.
+        - paragraph [ref=e29]: "Zo kun jij je bevrijden van deze slaapverwekkende, routinematige taken die veel tijd kosten. Je kan je weer focussen op waar het echt om draait: ondernemen."
+        - paragraph [ref=e30]: Dit is waar HoneyLink het verschil maakt. Ons developmentteam staat klaar om met jouw ideeen aan de slag te gaan. Geen uitdaging gaan wij uit de weg.
+        - paragraph [ref=e31]: Onze missie is om zoveel mogelijk 'saaie' en repetitieve taken te automatiseren, daardoor het werk leuker te maken en jouw bedrijf efficienter
+    - generic [ref=e33]:
+      - heading "De bezige bijen van HoneyLink" [level=2] [ref=e34]
+      - generic [ref=e35]:
+        - generic [ref=e36]:
+          - img "Joshua Offermans" [ref=e37]
+          - paragraph [ref=e38]: Joshua Offermans
+          - paragraph [ref=e39]: Founder | Automation Consultant
+        - generic [ref=e40]:
+          - img "Maurits Dijk" [ref=e41]
+          - paragraph [ref=e42]: Maurits Dijk
+          - paragraph [ref=e43]: Automation Developer
+    - generic [ref=e45]:
+      - heading "Veelgestelde vragen" [level=2] [ref=e46]
+      - generic [ref=e47]:
+        - button "Wat zijn praktische voorbeelden van diensten die HoneyLink aanbiedt?" [ref=e48]:
+          - generic [ref=e49]: Wat zijn praktische voorbeelden van diensten die HoneyLink aanbiedt?
+          - img [ref=e50]
+        - region:
+          - paragraph [ref=e52]: "Een automation kan je efficienter laten werken door het vereenvoudigen van administratie en het verbinden van je systemen. Zo kan een ingevuld contactformulier automatisch een klantrecord aanmaken in je CRM, een API-koppeling tussen je webshop en boekhoudsysteem zorgt dat facturen direct worden verwerkt en klanten ontvangen automatisch een follow-up e-mail. Een chatbot transformeert je klantenservice door 24/7 beschikbaar te zijn voor vragen en ondersteuning. Op maat getraind voor jouw bedrijf, kan de chatbot productadvies geven, bestellingen opvolgen, veelgestelde vragen beantwoorden en klanten ontzorgen bij routinematige problemen. Dit bespaart niet alleen tijd voor je team, maar zorgt ook voor consistente antwoorden en hogere klanttevredenheid. Bijvoorbeeld voor productdocumentatie: in plaats van handleidingen die niemand leest, biedt een chatbot interactieve hulp, precies wanneer je klanten het nodig hebben. Een AI-agent helpt bij personeelsplanning (zoals voor een restaurant): analyseer drukke dagen, check beschikbaarheid van personeel en stel automatisch een weekschema op. Interesse? Vraag een gratis intakegesprek aan!"
+      - generic [ref=e53]:
+        - button "Welke bedrijven hebben baat bij een samenwerking met HoneyLink?" [ref=e54]:
+          - generic [ref=e55]: Welke bedrijven hebben baat bij een samenwerking met HoneyLink?
+          - img [ref=e56]
+        - region:
+          - paragraph [ref=e58]: "Elk bedrijf dat repetitieve taken uitvoert, kan profiteren van automatisering. Of je nu een MKB-ondernemer bent met een webshop, een dienstverlenend bedrijf met veel klantcommunicatie, of een groeiend bedrijf dat moeite heeft om processen schaalbaar te houden -- HoneyLink helpt je verder. Denk aan e-commerce, horeca, adviesbureaus, maakbedrijven en zorginstellingen. Van kleine ondernemers tot middelgrote bedrijven: als je merkt dat je team te veel tijd kwijt is aan handmatige processen, is HoneyLink de juiste partner."
+      - generic [ref=e59]:
+        - button "Wat kan ik verwachten van een adviesgesprek?" [ref=e60]:
+          - generic [ref=e61]: Wat kan ik verwachten van een adviesgesprek?
+          - img [ref=e62]
+        - region:
+          - paragraph [ref=e64]: Tijdens een gratis adviesgesprek bespreken we jouw huidige werkprocessen en waar je tegenaan loopt. We kijken samen naar de mogelijkheden voor automatisering en AI binnen jouw bedrijf. Na het gesprek ontvang je een helder overzicht van de kansen en een voorstel voor de volgende stappen. Er zijn geen verplichtingen aan verbonden -- het gesprek is bedoeld om te ontdekken hoe we je het beste kunnen helpen.
+      - generic [ref=e65]:
+        - button "Hoe ziet de samenwerking eruit nadat ik klant ben geworden bij HoneyLink?" [ref=e66]:
+          - generic [ref=e67]: Hoe ziet de samenwerking eruit nadat ik klant ben geworden bij HoneyLink?
+          - img [ref=e68]
+        - region:
+          - paragraph [ref=e70]: Na het adviesgesprek stellen we samen een plan van aanpak op, afgestemd op jouw specifieke behoeften. Ons team gaat vervolgens aan de slag met de implementatie, waarbij we je stap voor stap meenemen in het proces. Je krijgt een vast aanspreekpunt en regelmatige updates over de voortgang. Na oplevering bieden we ondersteuning en zorgen we ervoor dat alles soepel blijft draaien. We denken ook proactief mee over verdere optimalisaties.
+      - generic [ref=e71]:
+        - button "Wat is een workflow automation?" [ref=e72]:
+          - generic [ref=e73]: Wat is een workflow automation?
+          - img [ref=e74]
+        - region:
+          - paragraph [ref=e76]: Een workflow automation is het automatiseren van een reeks taken die normaal handmatig worden uitgevoerd. Denk aan het automatisch verwerken van bestellingen, het versturen van herinneringsmails, of het synchroniseren van gegevens tussen verschillende systemen. Door deze processen te automatiseren bespaar je tijd, verminder je fouten en kun je je focussen op de taken die er echt toe doen. HoneyLink ontwerpt en bouwt deze workflows op maat voor jouw bedrijf.
+    - generic [ref=e80]:
+      - generic [ref=e81]:
+        - heading "Verbeter je bedrijfsproces vandaag nog" [level=2] [ref=e82]
+        - paragraph [ref=e83]: Meer weten over wat HoneyLink voor jouw bedrijf kan betekenen? Druk dan op knop hieronder!
+        - link "Plan gratis adviesgesprek" [ref=e84] [cursor=pointer]:
+          - /url: /contact
+      - img "HoneyLink team aan het werk" [ref=e86]
+  - contentinfo [ref=e87]:
+    - generic [ref=e88]:
+      - generic [ref=e89]:
+        - generic [ref=e90]:
+          - link "HoneyLink" [ref=e91] [cursor=pointer]:
+            - /url: /
+          - paragraph [ref=e92]: Van implementatie naar efficiëntie
+          - link "LinkedIn" [ref=e94] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/honeylink/
+            - img [ref=e95]
+        - generic [ref=e97]:
+          - heading "Over HoneyLink" [level=3] [ref=e98]
+          - list [ref=e99]:
+            - listitem [ref=e100]:
+              - link "Over ons" [ref=e101] [cursor=pointer]:
+                - /url: /over-ons
+        - generic [ref=e102]:
+          - heading "Hulpbronnen" [level=3] [ref=e103]
+          - list [ref=e104]:
+            - listitem [ref=e105]:
+              - link "Blog" [ref=e106] [cursor=pointer]:
+                - /url: /blogs
+            - listitem [ref=e107]:
+              - link "Cases" [ref=e108] [cursor=pointer]:
+                - /url: /cases
+            - listitem [ref=e109]:
+              - link "Contact" [ref=e110] [cursor=pointer]:
+                - /url: /contact
+        - generic [ref=e111]:
+          - heading "Bedrijfsinformatie" [level=3] [ref=e112]
+          - list [ref=e113]:
+            - listitem [ref=e114]:
+              - link "Privacy policy" [ref=e115] [cursor=pointer]:
+                - /url: /privacy-policy
+            - listitem [ref=e116]:
+              - link "Algemene voorwaarden" [ref=e117] [cursor=pointer]:
+                - /url: /terms-conditions
+            - listitem [ref=e118]:
+              - link "Betalingsvoorwaarden" [ref=e119] [cursor=pointer]:
+                - /url: /betalings-voorwaarden
+      - generic [ref=e120]:
+        - paragraph [ref=e121]: © 2026 HoneyLink. All rights reserved.
+        - generic [ref=e122]:
+          - link "Voorwaarden" [ref=e123] [cursor=pointer]:
+            - /url: /terms-conditions
+          - link "Betalingsvoorwaarden" [ref=e124] [cursor=pointer]:
+            - /url: /betalings-voorwaarden
+          - link "Privacy" [ref=e125] [cursor=pointer]:
+            - /url: /privacy-policy
