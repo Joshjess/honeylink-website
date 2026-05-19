@@ -1,6 +1,34 @@
 <script lang="ts">
 	import Button from '$lib/components/ui/Button.svelte';
+	import heroImg from '$lib/assets/homepage/hero-illustration.png?enhanced';
+
+	// Picture.img holds the fallback src (largest image in the fallback format).
+	// Picture.sources is a Record<format, srcset>. We pick the fallback format's
+	// srcset (or any modern format) for the preload's imagesrcset attribute.
+	// Using the fallback format keeps the preload safe across browsers and
+	// matches what the browser will actually fetch from the <img> fallback.
+	const sourceFormats = Object.keys(heroImg.sources);
+	// Prefer webp if present (good cross-browser support + small); else fall
+	// back to the last source (which is conventionally the fallback format).
+	const preferredFormat =
+		sourceFormats.find((f) => f === 'webp') ?? sourceFormats[sourceFormats.length - 1];
+	const preloadSrcset = preferredFormat ? heroImg.sources[preferredFormat] : '';
 </script>
+
+<svelte:head>
+	{#if preloadSrcset}
+		<link
+			rel="preload"
+			as="image"
+			href={heroImg.img.src}
+			imagesrcset={preloadSrcset}
+			imagesizes="min(1280px, 100vw)"
+			fetchpriority="high"
+		/>
+	{:else}
+		<link rel="preload" as="image" href={heroImg.img.src} fetchpriority="high" />
+	{/if}
+</svelte:head>
 
 <section class="relative overflow-hidden bg-brand-gold">
 	<!-- Gradient: solid gold at top, fading to white at bottom -->
@@ -24,14 +52,16 @@
 		</div>
 	</div>
 
-	<!-- Hero workflow illustration -->
+	<!-- Hero workflow illustration (LCP element -- eager, high priority) -->
 	<div class="relative px-4 pb-12 md:pb-20">
 		<div class="mx-auto max-w-5xl">
 			<enhanced:img
-				src="$lib/assets/homepage/hero-illustration.png"
+				src={heroImg}
 				alt="Workflow automatisering diagram"
 				class="w-full h-auto"
 				sizes="min(1280px, 100vw)"
+				fetchpriority="high"
+				decoding="async"
 			/>
 		</div>
 	</div>

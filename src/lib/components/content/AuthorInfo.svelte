@@ -15,6 +15,10 @@
 		src={authorImage}
 		alt={author}
 		class="w-10 h-10 rounded-full object-cover"
+		loading="lazy"
+		decoding="async"
+		width="40"
+		height="40"
 	/>
 	<span class="text-sm text-brand-gray-dark">
 		Door: {author}

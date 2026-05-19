@@ -22,7 +22,7 @@
 	headline: data.meta.title,
 	author: { '@type': 'Person', name: data.meta.author },
 	datePublished: data.meta.date,
-	image: `https://honeylink.nl${data.meta.image}`,
+	image: data.seo.image,
 	publisher: {
 		'@type': 'Organization',
 		name: 'HoneyLink',
@@ -50,11 +50,23 @@
 </h1>
 
 <div class="max-w-3xl mx-auto px-4 mb-8">
-	<img
-		src={data.meta.image}
-		alt={data.meta.title}
-		class="rounded-xl w-full h-auto"
-	/>
+	{#if data.heroPicture}
+		<enhanced:img
+			src={data.heroPicture}
+			alt={data.meta.title}
+			class="rounded-xl w-full h-auto"
+			sizes="(min-width: 768px) 768px, 100vw"
+			fetchpriority="high"
+			decoding="async"
+		/>
+	{:else}
+		<img
+			src={data.meta.image}
+			alt={data.meta.title}
+			class="rounded-xl w-full h-auto"
+			decoding="async"
+		/>
+	{/if}
 </div>
 
 <div class="max-w-3xl mx-auto px-4">

@@ -37,6 +37,8 @@
 					alt="HoneyLink team aan het werk"
 					class="rounded-2xl w-full h-auto"
 					sizes="(min-width: 1024px) 50vw, 100vw"
+					loading="lazy"
+					decoding="async"
 				/>
 			</div>
 			<div class="mt-8 lg:mt-0">

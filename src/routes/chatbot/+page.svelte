@@ -53,6 +53,8 @@
 								src={section.image}
 								alt={section.heading}
 								class="rounded-2xl w-full h-auto"
+								loading="lazy"
+								decoding="async"
 							/>
 						</div>
 					</div>

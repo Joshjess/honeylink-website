@@ -3,6 +3,15 @@ honeylink.nl, www.honeylink.nl {
 
 	encode gzip zstd
 
+	# Immutable, content-hashed assets from SvelteKit build (_app/immutable/*)
+	@immutable path /_app/immutable/*
+	header @immutable Cache-Control "public, max-age=31536000, immutable"
+
+	# Static images, fonts, icons (filenames not hashed -- shorter TTL, must-revalidate)
+	@staticAssets path /images/* /fonts/* /favicon.ico /favicon.png /favicon.svg /robots.txt
+	header @staticAssets Cache-Control "public, max-age=86400, stale-while-revalidate=604800"
+	header @staticAssets Vary "Accept"
+
 	header {
 		Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
 		X-Content-Type-Options "nosniff"
