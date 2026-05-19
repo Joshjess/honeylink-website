@@ -1,4 +1,5 @@
 import type { BlogPost, CaseStudy } from '$lib/types';
+import { getBlogHero, getCaseHero } from '$lib/assets/heroes';
 import readingTime from 'reading-time';
 
 export function getBlogPosts(): BlogPost[] {
@@ -24,7 +25,8 @@ export function getBlogPosts(): BlogPost[] {
 			posts.push({
 				...metadata,
 				slug,
-				readingTime: Math.max(1, Math.round(stats.minutes))
+				readingTime: Math.max(1, Math.round(stats.minutes)),
+				heroPicture: getBlogHero(slug)
 			});
 		}
 	}
@@ -46,7 +48,11 @@ export function getCases(): CaseStudy[] {
 		const metadata = file.metadata;
 
 		if (metadata?.published) {
-			cases.push({ ...metadata, slug });
+			cases.push({
+				...metadata,
+				slug,
+				heroPicture: getCaseHero(metadata.image)
+			});
 		}
 	}
 

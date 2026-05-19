@@ -13,7 +13,7 @@
 	'@type': 'Article',
 	headline: data.meta.title,
 	author: { '@type': 'Person', name: data.meta.author },
-	image: `https://honeylink.nl${data.meta.image}`,
+	image: data.seo.image,
 	publisher: {
 		'@type': 'Organization',
 		name: 'HoneyLink',
@@ -38,11 +38,23 @@
 
 <div class="max-w-3xl mx-auto px-4 mb-8">
 	<div class="bg-brand-gold rounded-xl overflow-hidden">
-		<img
-			src={data.meta.image}
-			alt={data.meta.title}
-			class="rounded-xl w-full h-auto"
-		/>
+		{#if data.heroPicture}
+			<enhanced:img
+				src={data.heroPicture}
+				alt={data.meta.title}
+				class="rounded-xl w-full h-auto"
+				sizes="(min-width: 768px) 768px, 100vw"
+				fetchpriority="high"
+				decoding="async"
+			/>
+		{:else}
+			<img
+				src={data.meta.image}
+				alt={data.meta.title}
+				class="rounded-xl w-full h-auto"
+				decoding="async"
+			/>
+		{/if}
 	</div>
 </div>
 

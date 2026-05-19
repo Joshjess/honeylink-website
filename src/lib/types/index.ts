@@ -1,3 +1,5 @@
+import type { Picture } from 'imagetools-core';
+
 export interface NavLink {
 	label: string;
 	href: string;
@@ -20,6 +22,8 @@ export interface BlogPost {
 	image: string;
 	published: boolean;
 	readingTime?: number;
+	/** Resolved @sveltejs/enhanced-img Picture for the hero, or null. */
+	heroPicture?: Picture | null;
 }
 
 export interface CaseStudy {
@@ -32,6 +36,8 @@ export interface CaseStudy {
 	excerpt: string;
 	image: string;
 	published: boolean;
+	/** Resolved @sveltejs/enhanced-img Picture for the hero, or null. */
+	heroPicture?: Picture | null;
 }
 
 export interface FaqItemData {
