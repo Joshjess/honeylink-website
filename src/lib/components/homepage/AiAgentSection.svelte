@@ -70,6 +70,8 @@
 					alt="Smart chatbot solution for seamless interactions."
 					class="w-full max-w-md rounded-2xl"
 					sizes="(min-width: 1024px) 50vw, 100vw"
+					loading="lazy"
+					decoding="async"
 				/>
 			</div>
 		</div>

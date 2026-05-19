@@ -32,6 +32,8 @@
 					alt="HoneyLink team aan het werk"
 					class="rounded-2xl w-full h-auto object-cover shadow-lg"
 					sizes="100vw"
+					loading="lazy"
+					decoding="async"
 				/>
 			</div>
 		</div>

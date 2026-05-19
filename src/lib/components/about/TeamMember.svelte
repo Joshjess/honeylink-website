@@ -15,6 +15,8 @@
 		src={image}
 		alt={name}
 		class="rounded-2xl aspect-square object-cover w-full max-w-xs"
+		loading="lazy"
+		decoding="async"
 	/>
 	<p class="font-heading font-bold text-brand-black mt-4">{name}</p>
 	<p class="text-sm text-brand-gray-dark">{role}</p>

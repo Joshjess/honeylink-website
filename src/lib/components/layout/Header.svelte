@@ -21,7 +21,15 @@
 	<div class="mx-auto max-w-7xl flex items-center justify-between px-4 py-5">
 		<!-- Logo -->
 		<a href="/" class="flex-shrink-0">
-			<img src="/images/honeylink-logo.png" alt="HoneyLink" class="h-8 w-auto" />
+			<!-- Above-the-fold logo: no loading="lazy" -->
+			<img
+				src="/images/honeylink-logo.png"
+				alt="HoneyLink"
+				class="h-8 w-auto"
+				width="458"
+				height="98"
+				decoding="async"
+			/>
 		</a>
 
 		<!-- Desktop navigation -->
