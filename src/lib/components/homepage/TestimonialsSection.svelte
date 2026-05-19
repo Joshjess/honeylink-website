@@ -1,13 +1,24 @@
 <script lang="ts">
 	import { inview } from '$lib/actions/inview';
+	import timoImg from '$lib/assets/testimonials/timo-wielink.jpeg?enhanced';
+	import keanuImg from '$lib/assets/testimonials/keanu-westerman.png?enhanced';
+	import jashaImg from '$lib/assets/testimonials/jasha-berkenbosch.webp?enhanced';
 
-	const testimonials = [
+	type Testimonial = {
+		quote: string;
+		name: string;
+		role: string;
+		image: typeof timoImg;
+		featured: boolean;
+	};
+
+	const testimonials: Testimonial[] = [
 		{
 			quote:
-				'Met HoneyLink hebben we ons klant-onboarding proces flink kunnen verbeteren. Hun chatbot geeft onze klanten direct antwoord op vragen over onze hardware producten. Het systeem heeft toegang tot onze complete productkennis, wat het proces effici\u00ebnter maakt.',
+				'Met HoneyLink hebben we ons klant-onboarding proces flink kunnen verbeteren. Hun chatbot geeft onze klanten direct antwoord op vragen over onze hardware producten. Het systeem heeft toegang tot onze complete productkennis, wat het proces efficiënter maakt.',
 			name: 'Timo Wielink',
 			role: 'Co-Founder & Head Of Product at OWL',
-			image: '/images/testimonials/timo-wielink.jpeg',
+			image: timoImg,
 			featured: true
 		},
 		{
@@ -15,7 +26,7 @@
 				"HoneyLink's content automatisering bespaart ons tijd en stelt ons in staat om voor elke klant gepersonaliseerde artikelen te leveren.",
 			name: 'Keanu Westerman',
 			role: 'Founder - WebFabrikant',
-			image: '/images/testimonials/keanu-westerman.png',
+			image: keanuImg,
 			featured: false
 		},
 		{
@@ -23,7 +34,7 @@
 				'HoneyLink heeft onze talent-acquisitie volledig geautomatiseerd, waardoor ons team nu kan focussen op wat echt telt: het succesvol managen van onze kunstenaars.',
 			name: 'Jasha Berkenbosch',
 			role: 'Founder - Novus Arte',
-			image: '/images/testimonials/jasha-berkenbosch.webp',
+			image: jashaImg,
 			featured: false
 		}
 	];
@@ -52,9 +63,12 @@
 					</p>
 				</blockquote>
 				<div class="flex items-center gap-4">
-					<img
+					<enhanced:img
 						src={featured.image}
 						alt={featured.name}
+						sizes="48px"
+						loading="lazy"
+						decoding="async"
 						class="w-12 h-12 rounded-full object-cover"
 					/>
 					<div>
@@ -74,9 +88,12 @@
 							</p>
 						</blockquote>
 						<div class="flex items-center gap-4">
-							<img
+							<enhanced:img
 								src={testimonial.image}
 								alt={testimonial.name}
+								sizes="40px"
+								loading="lazy"
+								decoding="async"
 								class="w-10 h-10 rounded-full object-cover"
 							/>
 							<div>

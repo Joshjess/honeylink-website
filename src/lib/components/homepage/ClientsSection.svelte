@@ -1,13 +1,23 @@
 <script lang="ts">
 	import { inview } from '$lib/actions/inview';
+	import owlLogo from '$lib/assets/clients/owl.webp?enhanced';
+	import wan2connectLogo from '$lib/assets/clients/wan2connect.png?enhanced';
+	import isolidifyLogo from '$lib/assets/clients/isolidify.png?enhanced';
+	import goochemLogo from '$lib/assets/clients/goochem-media.png?enhanced';
+	import novusArteLogo from '$lib/assets/clients/novus-arte.png?enhanced';
+	// webfabrikant.svg stays as a literal /images/... string -- enhanced:img does not transform SVG.
 
-	const clients = [
-		{ name: 'OWL', logo: '/images/clients/owl.webp' },
-		{ name: 'Wan2Connect', logo: '/images/clients/wan2connect.png' },
-		{ name: 'Isolidify', logo: '/images/clients/isolidify.png' },
-		{ name: 'Goochem Media', logo: '/images/clients/goochem-media.png' },
-		{ name: 'Webfabrikant', logo: '/images/clients/webfabrikant.svg' },
-		{ name: 'Novus Arte', logo: '/images/clients/novus-arte.png' }
+	type RasterClient = { name: string; logo: typeof owlLogo; type: 'raster' };
+	type SvgClient = { name: string; logo: string; type: 'svg' };
+	type Client = RasterClient | SvgClient;
+
+	const clients: Client[] = [
+		{ name: 'OWL', logo: owlLogo, type: 'raster' },
+		{ name: 'Wan2Connect', logo: wan2connectLogo, type: 'raster' },
+		{ name: 'Isolidify', logo: isolidifyLogo, type: 'raster' },
+		{ name: 'Goochem Media', logo: goochemLogo, type: 'raster' },
+		{ name: 'Webfabrikant', logo: '/images/clients/webfabrikant.svg', type: 'svg' },
+		{ name: 'Novus Arte', logo: novusArteLogo, type: 'raster' }
 	];
 </script>
 
@@ -29,20 +39,46 @@
 			<div class="marquee-track">
 				<div class="marquee-group">
 					{#each clients as client}
-						<img
-							src={client.logo}
-							alt="Logo {client.name}"
-							class="h-8 md:h-10 object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
-						/>
+						{#if client.type === 'svg'}
+							<img
+								src={client.logo}
+								alt="Logo {client.name}"
+								loading="lazy"
+								decoding="async"
+								class="h-8 md:h-10 object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+							/>
+						{:else}
+							<enhanced:img
+								src={client.logo}
+								alt="Logo {client.name}"
+								sizes="160px"
+								loading="lazy"
+								decoding="async"
+								class="h-8 md:h-10 object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+							/>
+						{/if}
 					{/each}
 				</div>
 				<div class="marquee-group" aria-hidden="true">
 					{#each clients as client}
-						<img
-							src={client.logo}
-							alt="Logo {client.name}"
-							class="h-8 md:h-10 object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
-						/>
+						{#if client.type === 'svg'}
+							<img
+								src={client.logo}
+								alt="Logo {client.name}"
+								loading="lazy"
+								decoding="async"
+								class="h-8 md:h-10 object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+							/>
+						{:else}
+							<enhanced:img
+								src={client.logo}
+								alt="Logo {client.name}"
+								sizes="160px"
+								loading="lazy"
+								decoding="async"
+								class="h-8 md:h-10 object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+							/>
+						{/if}
 					{/each}
 				</div>
 			</div>
