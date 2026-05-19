@@ -4,7 +4,7 @@ milestone: v1.0
 milestone_name: milestone
 status: unknown
 stopped_at: Completed 04-02-PLAN.md (human checkpoint - awaiting deployment)
-last_updated: "2026-03-22T19:24:42.700Z"
+last_updated: "2026-05-19T10:12:00.000Z"
 progress:
   total_phases: 4
   completed_phases: 4
@@ -114,8 +114,15 @@ None yet.
 - Framer URL crawl must happen before routing work begins (prerequisite for URL preservation)
 - mdsvex + Svelte 5: validate all 15 blog posts build successfully in Phase 2 before proceeding
 
+### Quick Tasks Completed
+
+| # | Description | Date | Commit | Directory |
+|---|-------------|------|--------|-----------|
+| 260519-g6h | Implement approved image performance plan: migrate to enhanced:img, add Caddy cache headers, image perf attributes, preload LCP | 2026-05-19 | 0dbf6fc | [260519-g6h-implement-approved-image-performance-pla](./quick/260519-g6h-implement-approved-image-performance-pla/) |
+
 ## Session Continuity
 
+Last activity: 2026-05-19 - Completed quick task 260519-g6h: image performance (Tasks 1-4 of 5, Task 5 awaits human verification)
 Last session: 2026-03-22T19:24:37.966Z
 Stopped at: Completed 04-02-PLAN.md (human checkpoint - awaiting deployment)
 Resume file: None
