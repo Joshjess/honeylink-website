@@ -49,6 +49,24 @@
       document.getElementById("calendly-iframe")?.focus();
     });
   }
+
+  function prewarmOnApproach(node: HTMLElement) {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          prewarmCalendar();
+          observer.disconnect();
+        }
+      },
+      { rootMargin: "400px" },
+    );
+    observer.observe(node);
+    return {
+      destroy() {
+        observer.disconnect();
+      },
+    };
+  }
 </script>
 
 <svelte:head>
@@ -160,7 +178,7 @@
     </div>
 
     <!-- Right column: Calendly embed (click-to-load) -->
-    <div class="relative" style="height: 700px">
+    <div use:prewarmOnApproach class="relative" style="height: 700px">
       {#if showCalendar}
         <iframe
           id="calendly-iframe"
@@ -176,6 +194,7 @@
         <button
           type="button"
           onclick={loadCalendar}
+          onpointerdown={prewarmCalendar}
           onmouseenter={prewarmCalendar}
           onfocus={prewarmCalendar}
           ontouchstart={prewarmCalendar}
