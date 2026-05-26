@@ -119,10 +119,11 @@ None yet.
 | # | Description | Date | Commit | Directory |
 |---|-------------|------|--------|-----------|
 | 260519-g6h | Implement approved image performance plan: migrate to enhanced:img, add Caddy cache headers, image perf attributes, preload LCP | 2026-05-19 | 0dbf6fc | [260519-g6h-implement-approved-image-performance-pla](./quick/260519-g6h-implement-approved-image-performance-pla/) |
+| 260526-u3v | Migrate the project from npm to bun as the package manager and runtime | 2026-05-26 | 367da50 | [260526-u3v-migrate-the-project-from-npm-to-bun-as-t](./quick/260526-u3v-migrate-the-project-from-npm-to-bun-as-t/) |
 
 ## Session Continuity
 
-Last activity: 2026-05-19 - Completed quick task 260519-g6h: image performance (Tasks 1-4 of 5, Task 5 awaits human verification)
+Last activity: 2026-05-26 - Completed quick task 260526-u3v: migrate npm → bun
 Last session: 2026-03-22T19:24:37.966Z
 Stopped at: Completed 04-02-PLAN.md (human checkpoint - awaiting deployment)
 Resume file: None
