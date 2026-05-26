@@ -13,8 +13,6 @@ services:
       - HOST_HEADER=x-forwarded-host
     expose:
       - "3000"
-    networks:
-      - web
     healthcheck:
       test:
         [
