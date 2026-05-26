@@ -25,6 +25,13 @@
   });
 </script>
 
+<svelte:head>
+  <link rel="preconnect" href="https://calendly.com" crossorigin />
+  <link rel="preconnect" href="https://assets.calendly.com" crossorigin />
+  <link rel="dns-prefetch" href="https://calendly.com" />
+  <link rel="dns-prefetch" href="https://assets.calendly.com" />
+</svelte:head>
+
 <JsonLd
   schema={{
     "@type": "BreadcrumbList",
@@ -133,7 +140,8 @@
         width="100%"
         height="700"
         frameborder="0"
-        loading="lazy"
+        loading="eager"
+        importance="high"
         class="rounded-2xl"
       ></iframe>
     </div>
