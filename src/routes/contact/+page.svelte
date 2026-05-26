@@ -11,6 +11,7 @@
   import MapPin from "@lucide/svelte/icons/map-pin";
   import CheckCircle2 from "@lucide/svelte/icons/check-circle-2";
   import Building2 from "@lucide/svelte/icons/building-2";
+  import CalendarDays from "@lucide/svelte/icons/calendar-days";
 
   const { data } = $props();
   // svelte-ignore state_referenced_locally
@@ -18,16 +19,45 @@
     data.form,
   );
 
+  const CALENDLY_URL =
+    "https://calendly.com/joshua-honeylink/advies-gesprek?hide_gdpr_banner=1";
+
+  let showCalendar = $state(false);
+  let calendarHovered = $state(false);
+  let prewarmed = false;
+
   $effect(() => {
     if ($message?.type === "success") {
       tick().then(() => document.getElementById("success-heading")?.focus());
     }
   });
+
+  function prewarmCalendar() {
+    if (prewarmed) return;
+    prewarmed = true;
+    calendarHovered = true;
+    // Fire-and-forget fetch to populate the HTTP cache so the iframe load is instant
+    fetch(CALENDLY_URL, { mode: "no-cors", credentials: "include" }).catch(
+      () => {},
+    );
+  }
+
+  function loadCalendar() {
+    if (showCalendar) return;
+    showCalendar = true;
+    tick().then(() => {
+      document.getElementById("calendly-iframe")?.focus();
+    });
+  }
 </script>
 
 <svelte:head>
-  <link rel="preconnect" href="https://calendly.com" crossorigin />
-  <link rel="preconnect" href="https://assets.calendly.com" crossorigin />
+  <link rel="preconnect" href="https://calendly.com" crossorigin="anonymous" />
+  <link
+    rel="preconnect"
+    href="https://assets.calendly.com"
+    crossorigin="anonymous"
+  />
   <link rel="dns-prefetch" href="https://calendly.com" />
   <link rel="dns-prefetch" href="https://assets.calendly.com" />
 </svelte:head>
@@ -129,21 +159,47 @@
       </div>
     </div>
 
-    <!-- Right column: Calendly embed -->
-    <div
-      use:inview
-      class="opacity-0 translate-y-4 transition-all duration-700 ease-out [&.in-view]:opacity-100 [&.in-view]:translate-y-0"
-    >
-      <iframe
-        src="https://calendly.com/joshua-honeylink/advies-gesprek?hide_gdpr_banner=1"
-        title="Plan een adviesgesprek met HoneyLink"
-        width="100%"
-        height="700"
-        frameborder="0"
-        loading="eager"
-        importance="high"
-        class="rounded-2xl"
-      ></iframe>
+    <!-- Right column: Calendly embed (click-to-load) -->
+    <div class="relative" style="height: 700px">
+      {#if showCalendar}
+        <iframe
+          id="calendly-iframe"
+          src={CALENDLY_URL}
+          title="Plan een adviesgesprek met HoneyLink"
+          width="100%"
+          height="700"
+          frameborder="0"
+          loading="eager"
+          class="block rounded-2xl"
+        ></iframe>
+      {:else}
+        <button
+          type="button"
+          onclick={loadCalendar}
+          onmouseenter={prewarmCalendar}
+          onfocus={prewarmCalendar}
+          ontouchstart={prewarmCalendar}
+          aria-label="Laad de agenda om een adviesgesprek te plannen"
+          class="group relative h-full w-full overflow-hidden rounded-2xl bg-brand-gray-light text-left transition-all duration-200 hover:shadow-xl focus:outline-none focus-visible:ring-4 focus-visible:ring-brand-purple/40"
+        >
+          <div class="absolute inset-0 flex flex-col items-center justify-center gap-6 p-8">
+            <div class="flex h-20 w-20 items-center justify-center rounded-full bg-brand-purple text-white shadow-lg transition-transform duration-200 group-hover:scale-110">
+              <CalendarDays size={40} strokeWidth={1.75} />
+            </div>
+            <div class="text-center">
+              <p class="font-heading text-2xl md:text-3xl font-bold text-brand-black mb-2">
+                Plan je adviesgesprek
+              </p>
+              <p class="text-base text-brand-gray-dark max-w-sm">
+                Klik om de agenda te openen en direct een tijd te kiezen.
+              </p>
+            </div>
+            <span class="inline-flex items-center gap-2 rounded-full bg-brand-black px-6 py-3 font-accent font-medium text-sm text-white transition-transform duration-200 group-hover:scale-105">
+              {calendarHovered ? "Bezig met laden…" : "Agenda openen"}
+            </span>
+          </div>
+        </button>
+      {/if}
     </div>
   </div>
 </section>
