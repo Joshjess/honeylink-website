@@ -1,7 +1,4 @@
-import { Resend } from 'resend';
-import { RESEND_API_KEY } from '$env/static/private';
-
-const resend = new Resend(RESEND_API_KEY);
+import { FORMSPREE_FORM_ID } from '$env/static/private';
 
 interface ContactEmailData {
 	name: string;
@@ -11,33 +8,32 @@ interface ContactEmailData {
 }
 
 export async function sendContactEmail(data: ContactEmailData) {
-	const esc = (s: string) =>
-		s
-			.replace(/&/g, '&amp;')
-			.replace(/</g, '&lt;')
-			.replace(/>/g, '&gt;');
-
 	try {
-		const { error } = await resend.emails.send({
-			from: 'HoneyLink Contact <noreply@honeylink.nl>',
-			to: 'info@honeylink.nl',
-			replyTo: data.email,
-			subject: `Nieuw contactformulier: ${data.name}`,
-			html: `
-				<div style="font-family: sans-serif; max-width: 600px; margin: 0 auto;">
-					<h2 style="color: #1a1a1a;">Nieuw bericht via honeylink.nl</h2>
-					<table style="width: 100%; border-collapse: collapse;">
-						<tr><td style="padding: 8px; font-weight: bold;">Naam:</td><td style="padding: 8px;">${esc(data.name)}</td></tr>
-						<tr><td style="padding: 8px; font-weight: bold;">E-mail:</td><td style="padding: 8px;">${esc(data.email)}</td></tr>
-						<tr><td style="padding: 8px; font-weight: bold;">Bedrijf:</td><td style="padding: 8px;">${esc(data.company ?? '-')}</td></tr>
-					</table>
-					<h3 style="color: #1a1a1a; margin-top: 24px;">Bericht:</h3>
-					<p style="white-space: pre-wrap;">${esc(data.message)}</p>
-				</div>
-			`
+		const response = await fetch(`https://formspree.io/f/${FORMSPREE_FORM_ID}`, {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json',
+				Accept: 'application/json'
+			},
+			body: JSON.stringify({
+				name: data.name,
+				email: data.email,
+				company: data.company ?? '',
+				message: data.message,
+				_subject: `Nieuw contactformulier: ${data.name}`,
+				_replyto: data.email
+			})
 		});
-		return { success: !error, error };
+
+		if (!response.ok) {
+			const body = await response.text().catch(() => '');
+			console.error('[contact-email] Formspree returned non-OK:', response.status, body);
+			return { success: false, error: { status: response.status, body } };
+		}
+
+		return { success: true, error: null };
 	} catch (err) {
+		console.error('[contact-email] Exception while sending:', err);
 		return { success: false, error: err };
 	}
 }

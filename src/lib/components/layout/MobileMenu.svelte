@@ -1,6 +1,8 @@
 <script lang="ts">
 	import type { NavLink } from '$lib/types';
 	import Button from '$lib/components/ui/Button.svelte';
+	import X from '@lucide/svelte/icons/x';
+	import ChevronDown from '@lucide/svelte/icons/chevron-down';
 
 	let {
 		open,
@@ -36,14 +38,7 @@
 				class="p-2 hover:bg-brand-gray-light rounded-lg"
 				aria-label="Menu sluiten"
 			>
-				<svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-					<path
-						stroke-linecap="round"
-						stroke-linejoin="round"
-						stroke-width="2"
-						d="M6 18L18 6M6 6l12 12"
-					/>
-				</svg>
+				<X class="w-6 h-6" />
 			</button>
 		</div>
 
@@ -56,21 +51,11 @@
 							onclick={() => toggleGroup(link.label)}
 						>
 							{link.label}
-							<svg
+							<ChevronDown
 								class="w-5 h-5 transition-transform {expandedGroup === link.label
 									? 'rotate-180'
 									: ''}"
-								fill="none"
-								viewBox="0 0 24 24"
-								stroke="currentColor"
-							>
-								<path
-									stroke-linecap="round"
-									stroke-linejoin="round"
-									stroke-width="2"
-									d="M19 9l-7 7-7-7"
-								/>
-							</svg>
+							/>
 						</button>
 						{#if expandedGroup === link.label}
 							<div class="ml-4 space-y-1">

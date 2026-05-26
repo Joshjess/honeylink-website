@@ -11,5 +11,12 @@ export const handle: Handle = async ({ event, resolve }) => {
 	response.headers.set('Referrer-Policy', 'strict-origin-when-cross-origin');
 	response.headers.set('Permissions-Policy', 'camera=(), microphone=(), geolocation=()');
 
+	if (event.request.method === 'GET' && !response.headers.has('cache-control')) {
+		const contentType = response.headers.get('content-type') ?? '';
+		if (contentType.includes('text/html')) {
+			response.headers.set('Cache-Control', 'public, max-age=0, must-revalidate');
+		}
+	}
+
 	return response;
 };

@@ -1,6 +1,7 @@
 <script lang="ts">
 	import type { NavLink } from "$lib/types";
 	import { page } from "$app/state";
+	import ChevronDown from "@lucide/svelte/icons/chevron-down";
 
 	let { links }: { links: NavLink[] } = $props();
 
@@ -29,19 +30,7 @@
 					aria-expanded={openDropdown === link.label}
 				>
 					{link.label}
-					<svg
-						class="inline-block w-4 h-4 ml-1"
-						fill="none"
-						viewBox="0 0 24 24"
-						stroke="currentColor"
-					>
-						<path
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							stroke-width="2"
-							d="M19 9l-7 7-7-7"
-						/>
-					</svg>
+					<ChevronDown class="inline-block w-4 h-4 ml-1" />
 				</button>
 				{#if openDropdown === link.label}
 					<div

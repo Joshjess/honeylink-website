@@ -45,7 +45,7 @@
 								alt="Logo {client.name}"
 								loading="lazy"
 								decoding="async"
-								class="h-8 md:h-10 object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+								class="h-8 md:h-10 w-auto max-w-[160px] object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
 							/>
 						{:else}
 							<enhanced:img
@@ -54,7 +54,7 @@
 								sizes="160px"
 								loading="lazy"
 								decoding="async"
-								class="h-8 md:h-10 object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+								class="h-8 md:h-10 w-auto max-w-[160px] object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
 							/>
 						{/if}
 					{/each}
@@ -67,7 +67,7 @@
 								alt="Logo {client.name}"
 								loading="lazy"
 								decoding="async"
-								class="h-8 md:h-10 object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+								class="h-8 md:h-10 w-auto max-w-[160px] object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
 							/>
 						{:else}
 							<enhanced:img
@@ -76,7 +76,7 @@
 								sizes="160px"
 								loading="lazy"
 								decoding="async"
-								class="h-8 md:h-10 object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+								class="h-8 md:h-10 w-auto max-w-[160px] object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
 							/>
 						{/if}
 					{/each}

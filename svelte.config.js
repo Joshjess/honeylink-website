@@ -17,7 +17,7 @@ const config = {
 	extensions: ['.svelte', '.md'],
 	preprocess: [vitePreprocess(), mdsvex(mdsvexOptions)],
 	kit: {
-		adapter: adapter(),
+		adapter: adapter({ precompress: true }),
 		csp: {
 			directives: {
 				'default-src': ['self'],
