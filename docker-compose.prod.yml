@@ -13,6 +13,8 @@ services:
       - HOST_HEADER=x-forwarded-host
     expose:
       - "3000"
+    # Use 127.0.0.1 not localhost — alpine resolves localhost to ::1 first
+    # while the server binds to 0.0.0.0 (IPv4), so IPv6 lookups refuse.
     healthcheck:
       test:
         [
@@ -21,7 +23,7 @@ services:
           "--no-verbose",
           "--tries=1",
           "--spider",
-          "http://localhost:3000/",
+          "http://127.0.0.1:3000/",
         ]
       interval: 30s
       timeout: 5s

@@ -39,9 +39,11 @@ ENV PORT=3000
 # Expose port
 EXPOSE 3000
 
-# Health check (wget is present in oven/bun:1-alpine via busybox)
+# Health check (wget is present in oven/bun:1-alpine via busybox).
+# Use 127.0.0.1 (not localhost) — alpine resolves `localhost` to `::1` first and
+# the SvelteKit server binds to 0.0.0.0 (IPv4 only), so IPv6 lookups refuse.
 HEALTHCHECK --interval=30s --timeout=5s --start-period=10s --retries=3 \
-  CMD wget --no-verbose --tries=1 --spider http://localhost:3000/ || exit 1
+  CMD wget --no-verbose --tries=1 --spider http://127.0.0.1:3000/ || exit 1
 
 # Run the SvelteKit server under Bun's Node-compat layer
 CMD ["bun", "./build/index.js"]
