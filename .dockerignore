@@ -14,3 +14,7 @@ CLAUDE.md
 CHANGELOG.md
 .vscode
 .idea
+# Strip any stale npm lockfile so a Node-based contributor's checkout
+# doesn't confuse `bun install` inside the image.
+package-lock.json
+# DO NOT ignore bun.lock / bun.lockb — required by `bun install --frozen-lockfile`
