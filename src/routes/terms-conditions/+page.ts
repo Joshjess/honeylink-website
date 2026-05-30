@@ -1,4 +1,5 @@
 import { error } from '@sveltejs/kit';
+import { termsConditionsArchiveVersions } from '$lib/data/legal';
 import type { PageLoad } from './$types';
 
 export const prerender = true;
@@ -10,6 +11,7 @@ export const load: PageLoad = async () => {
 		return {
 			content: post.default,
 			meta: post.metadata,
+			previousVersions: termsConditionsArchiveVersions,
 			seo: {
 				title: 'Algemene Voorwaarden | HoneyLink',
 				description:

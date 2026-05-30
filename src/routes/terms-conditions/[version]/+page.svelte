@@ -11,12 +11,21 @@
 	'@type': 'BreadcrumbList',
 	itemListElement: [
 		{ '@type': 'ListItem', position: 1, name: 'Home', item: 'https://honeylink.nl' },
-		{ '@type': 'ListItem', position: 2, name: 'Algemene Voorwaarden' }
+		{
+			'@type': 'ListItem',
+			position: 2,
+			name: 'Algemene Voorwaarden',
+			item: 'https://honeylink.nl/terms-conditions'
+		},
+		{
+			'@type': 'ListItem',
+			position: 3,
+			name: data.archiveVersion?.label ?? 'Gearchiveerde algemene voorwaarden'
+		}
 	]
 }} />
 
 <div class="bg-white">
-	<!-- Header -->
 	<div class="pt-20 md:pt-28 lg:pt-36 pb-8 text-center px-4">
 		<h1
 			class="font-heading text-4xl md:text-5xl lg:text-7xl font-bold leading-tight text-brand-black"
@@ -28,28 +37,27 @@
 				Laatst bijgewerkt: {data.meta.lastUpdated}
 			</p>
 		{/if}
+		<p class="text-sm text-brand-gray-dark text-center mt-3">
+			Gearchiveerde versie. Bekijk de <a
+				href={data.currentHref}
+				class="text-brand-purple underline hover:text-brand-black">actuele algemene voorwaarden</a
+			>.
+		</p>
 	</div>
 
-	<!-- Prose body -->
 	<div class="px-4 pb-16 md:pb-24">
 		<ProseContent maxWidth="legal">
 			<ContentComponent />
 
-			{#if data.previousVersions.length > 0}
-				<hr />
+			<hr />
 
-				<section aria-labelledby="terms-archive">
-					<h2 id="terms-archive">Eerdere versies</h2>
-					<p>Bekijk oudere versies van deze algemene voorwaarden.</p>
-					<ul>
-						{#each data.previousVersions as version}
-							<li>
-								<a href={version.href}>{version.label}</a>
-							</li>
-						{/each}
-					</ul>
-				</section>
-			{/if}
+			<section aria-labelledby="current-terms-version">
+				<h2 id="current-terms-version">Nieuwste versie</h2>
+				<p>
+					Dit is een gearchiveerde versie. Bekijk de
+					<a href={data.currentHref}>actuele algemene voorwaarden</a>.
+				</p>
+			</section>
 		</ProseContent>
 	</div>
 </div>

@@ -1,6 +1,6 @@
 ---
 title: "Algemene voorwaarden"
-lastUpdated: "30 mei 2026"
+lastUpdated: "14 April 2025"
 ---
 
 ## Artikel 1 Definities
@@ -41,7 +41,7 @@ lastUpdated: "30 mei 2026"
 
 ## Artikel 4 Uitvoering van de Overeenkomst en levering
 
-4.1 Alle verplichtingen van HoneyLink uit hoofde van de Overeenkomst zijn inspanningsverbintenissen, tenzij uitdrukkelijk en schriftelijk anders is overeengekomen. Indien in de Overeenkomst of bijbehorende projectomschrijving concrete op te leveren resultaten, deliverables of mijlpalen worden beschreven, gelden deze als richtinggevend kader voor de door HoneyLink te verrichten inspanning en niet als gegarandeerd resultaat. HoneyLink zal zich als een zorgvuldig handelend en redelijk bekwaam IT-dienstverlener inspannen om de beschreven resultaten te bereiken.
+4.1 HoneyLink zal de Overeenkomst naar beste inzicht en vermogen en overeenkomstig de eisen van goed vakmanschap uitvoeren. De tussen HoneyLink en Opdrachtgever te sluiten Overeenkomst draagt het karakter van een inspanningsverbintenis.
 
 4.2 HoneyLink heeft het recht bepaalde werkzaamheden te laten verrichten door derden.
 
