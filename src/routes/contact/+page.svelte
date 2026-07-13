@@ -124,19 +124,6 @@
       <!-- Phone & Email side by side -->
       <div class="grid grid-cols-2 gap-6 mb-8">
         <div class="flex items-start gap-3">
-          <Phone size={20} class="flex-shrink-0 mt-0.5 text-brand-black" />
-          <div>
-            <p class="font-accent font-medium text-sm text-brand-gray-dark">
-              Bel Ons
-            </p>
-            <a
-              href="tel:+31203086840"
-              class="text-base text-brand-black hover:text-brand-purple transition-colors duration-200"
-              >020 308 68 40</a
-            >
-          </div>
-        </div>
-        <div class="flex items-start gap-3">
           <Mail size={20} class="shrink-0 mt-0.5 text-brand-black" />
           <div>
             <p class="font-accent font-medium text-sm text-brand-gray-dark">
@@ -201,19 +188,27 @@
           aria-label="Laad de agenda om een adviesgesprek te plannen"
           class="group relative h-full w-full overflow-hidden rounded-2xl bg-brand-gray-light text-left transition-all duration-200 hover:shadow-xl focus:outline-none focus-visible:ring-4 focus-visible:ring-brand-purple/40"
         >
-          <div class="absolute inset-0 flex flex-col items-center justify-center gap-6 p-8">
-            <div class="flex h-20 w-20 items-center justify-center rounded-full bg-brand-purple text-white shadow-lg transition-transform duration-200 group-hover:scale-110">
+          <div
+            class="absolute inset-0 flex flex-col items-center justify-center gap-6 p-8"
+          >
+            <div
+              class="flex h-20 w-20 items-center justify-center rounded-full bg-brand-purple text-white shadow-lg transition-transform duration-200 group-hover:scale-110"
+            >
               <CalendarDays size={40} strokeWidth={1.75} />
             </div>
             <div class="text-center">
-              <p class="font-heading text-2xl md:text-3xl font-bold text-brand-black mb-2">
+              <p
+                class="font-heading text-2xl md:text-3xl font-bold text-brand-black mb-2"
+              >
                 Plan je adviesgesprek
               </p>
               <p class="text-base text-brand-gray-dark max-w-sm">
                 Klik om de agenda te openen en direct een tijd te kiezen.
               </p>
             </div>
-            <span class="inline-flex items-center gap-2 rounded-full bg-brand-black px-6 py-3 font-accent font-medium text-sm text-white transition-transform duration-200 group-hover:scale-105">
+            <span
+              class="inline-flex items-center gap-2 rounded-full bg-brand-black px-6 py-3 font-accent font-medium text-sm text-white transition-transform duration-200 group-hover:scale-105"
+            >
               {calendarHovered ? "Bezig met laden…" : "Agenda openen"}
             </span>
           </div>
